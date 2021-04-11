@@ -6,7 +6,6 @@ Category: Category
 Tags: [zh_TW, Proxy, Tutorial]
 Slug: ProxySettings
 Authors: [undecV]
-Lang: cht
 Summary: Proxy Settings
 ...
 

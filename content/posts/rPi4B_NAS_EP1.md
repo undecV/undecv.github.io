@@ -6,7 +6,6 @@ Category: Category
 Tags: [zh_TW, Raspberry Pi, NAS, HDD, USB, USB HUB]
 Slug: rPi4BNASEp1
 Authors: [undecV]
-Lang: cht
 Summary: Raspberry Pi 4B NAS Episode 1 (HDD & USB)<br /><del>爬文是不可能爬文的，这辈子不可能爬文的。Spec 又不會查，Run 不起來纔是正常的樣子。</del>
 ...
 

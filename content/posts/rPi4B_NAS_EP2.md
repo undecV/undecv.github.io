@@ -6,7 +6,6 @@ Category: Category
 Tags: [zh_TW, Raspberry Pi, NAS, HDD, Ethernet, Wi-Fi]
 Slug: rPi4BNASEp2
 Authors: [undecV]
-Lang: cht
 Summary: Raspberry Pi 4B NAS Episode 2 (Network)<br /><del>究竟讀寫速度會卡在 USB 還是 SMB 呢？rPi4B NAS 翻車最終話！\滑稽。</del>
 ...
 

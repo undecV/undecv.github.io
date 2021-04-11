@@ -6,7 +6,6 @@ Category: Category
 Tags: [zh_TW, Awesome lists, Windows, Softwares, Apps]
 Slug: WinSoft
 Authors: [undecV]
-Lang: cht
 Summary: List of Windows Application Software<br /><del>裝機必備的實用軟體大合集！</del>
 ...
 

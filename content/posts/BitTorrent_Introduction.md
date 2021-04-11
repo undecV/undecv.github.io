@@ -6,7 +6,6 @@ Category: Category
 Tags: [zh_TW, BitTorrent, Download, File Sharing, Tutorial, Introduction]
 Slug: BitTorrentIntro
 Authors: [undecV]
-Lang: cht
 Summary: BitTorrent Introduction
 ...
 

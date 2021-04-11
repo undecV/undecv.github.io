@@ -2,85 +2,106 @@
 # -*- coding: utf-8 -*- #
 from datetime import datetime
 
-
 AUTHOR = 'UndecV'
-SITEURL = ''  # SITEURL = 'https://undecv.github.io'
+SITEURL = ''  # 'https://undecv.github.io'
 SITENAME = 'キャンディージャー'
 SITETITLE = 'キャンディージャー'
-SITESUBTITLE = 'Candy jar'
-SITEDESCRIPTION = "undecV's Blog"
+SITESUBTITLE = 'undecV\'s Blog \"Candy Jar\"'
+SITEDESCRIPTION = 'undecV\'s Blog \"Candy Jar\"'
 SITELOGO = SITEURL + '/images/128.png'
 FAVICON = SITEURL + '/favicon.ico'
 BROWSER_COLOR = '#333'
 ROBOTS = 'index, follow'
 
-THEME = "./themes/Flex-v2"  # https://github.com/alexandrevicenzi/Flex
+THEME = "./themes/Flex"  # https://github.com/alexandrevicenzi/Flex
 PATH = 'content'
 # OUTPUT_PATH = "blog/"
-TIMEZONE = 'Asia/Taipei'
 
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["pelican-yaml-metadata"]
 
-# # Enable i18n plugin.
-# PLUGINS = ["i18n_subsites"]
-# # Enable Jinja2 i18n extension used to parse translations.
-# JINJA_ENVIRONMENT = {"extensions": ["jinja2.ext.i18n"]}
+# ===== PATHS =================================================================
 
-# # Default theme language.
-# I18N_TEMPLATES_LANG = "en"
-# # Translate to German.
-DEFAULT_LANG = 'zh_TW'
-OG_LOCALE = "zh_TW"
-# LOCALE = "de_DE"
-# ARTICLE_HIDE_TRANSLATION = False
+STATIC_PATHS = [
+    'images',
+    'extra/custom.css',
+    'extra/favicon.ico',
+    # 'extra',
+]
+EXTRA_PATH_METADATA = {
+    'extra/custom.css': {'path': 'theme/custom.css'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+#     'extra/robots.txt': {'path': 'robots.txt'},
+#     'extra/CNAME': {'path': 'CNAME'},
+#     'extra/LICENSE': {'path': 'LICENSE'},
+#     'extra/README': {'path': 'README'},
+}
+CUSTOM_CSS = "theme/custom.css"
 
-# DATE_FORMATS = {
-#     "en": "%B %d, %Y",
+# ===== PAGES =================================================================
+
+ARTICLE_URL = 'posts/{slug}.html'       # 'posts/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{slug}.html'   # 'posts/{slug}/index.html'
+PAGE_URL = 'pages/{slug}.html'          # 'pages/{slug}/'
+PAGE_SAVE_AS = 'pages/{slug}.html'      # 'pages/{slug}/index.html'
+
+# DISABLE_URL_HASH = True
+HOME_HIDE_TAGS = False
+# PAGES_SORT_ATTRIBUTE = 'title'
+# REL_CANONICAL = True
+USE_FOLDER_AS_CATEGORY = False
+DEFAULT_PAGINATION = 10
+
+# ===== COPYRIGHT =============================================================
+
+COPYRIGHT_NAME = SITETITLE
+COPYRIGHT_YEAR = datetime.now().year
+# CC_LICENSE = {
+#     "name": "Creative Commons Attribution-ShareAlike 4.0 International License",
+#     "version": "4.0",
+#     "slug": "by-sa",
+#     "icon": True,
+#     "language": "en_US",
 # }
 
-ARTICLE_URL = 'posts/{slug}/'
-ARTICLE_SAVE_AS = 'posts/{slug}/index.html'
-PAGE_URL = 'pages/{slug}/'
-PAGE_SAVE_AS = 'pages/{slug}/index.html'
-# REL_CANONICAL = True
-# DISABLE_URL_HASH = True
-# PAGES_SORT_ATTRIBUTE = 'title'
+# ===== I18N ==================================================================
+
+# ARTICLE_HIDE_TRANSLATION = False
+# PLUGINS = ["i18n_subsites"]
+# JINJA_ENVIRONMENT = {"extensions": ["jinja2.ext.i18n"]}
+# I18N_TEMPLATES_LANG = "en"
+DEFAULT_LANG = 'zh_TW'
+LOCALE = "zh_TW"
+OG_LOCALE = "zh_TW"
+# DATE_FORMATS = {"en": "%B %d, %Y", }
+TIMEZONE = 'Asia/Taipei'
+
+# ===== FEEDS =================================================================
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
-TRANSLATION_FEED_ATOM = None
+# TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-USE_FOLDER_AS_CATEGORY = False
+# ===== MENU ==================================================================
+
 MAIN_MENU = True
-HOME_HIDE_TAGS = False
+MENUITEMS = (
+    ("Archives", "/archives.html"),
+    ("Categories", "/categories.html"),
+    ("Tags", "/tags.html"),
+)
 
 SOCIAL = (
     ('github', 'https://github.com/undecv'),
     ('twitter', 'https://twitter.com/phinhdgxiaohai'),
     ('telegram', 'https://t.me/s/poi0048'),
     ('rss', 'feeds/all.atom.xml'),
-    # ('envelope-o',''),
-    # ('facebook',''),
-    # ('github-alt',''),
-    # ('google',''),
-    # ('linkedin',''),
-    # ('pinterest',''),
-    # ('reddit',''),
-    # ('stack-overflow',''),
-    # ('soundcloud',''),
-    # ('youtube',''),
-    # ('xing','')
-)
-# GITHUB_CORNER_URL = 'https://github.com/undecv'
-
-MENUITEMS = (
-    ("Archives", "/archives.html"),
-    ("Categories", "/categories.html"),
-    ("Tags", "/tags.html"),
+    # ('envelope-o',''), ('facebook',''), ('github-alt',''), ('google',''), 
+    # ('linkedin',''), ('pinterest',''), ('reddit',''), ('stack-overflow',''), 
+    # ('soundcloud',''), ('youtube',''), ('xing','')
 )
 
 # LINKS = (
@@ -89,23 +110,22 @@ MENUITEMS = (
 #     ('Jinja2', 'http://jinja.pocoo.org/'),
 #     ('You can modify those links in your config file', '#'),
 # )
-# LINKS_IN_NEW_TAB = True
+LINKS_IN_NEW_TAB = True
 
-# FRIEND_LINKS = (
-#   ('通訊雜記', 'https://wenyuangg.github.io/'),
-# )
+# ===== DARK MODE =============================================================
 
-COPYRIGHT_NAME = SITETITLE
-COPYRIGHT_YEAR = datetime.now().year
-# CC_LICENSE = {
-#     'name': 'Creative Commons Attribution-ShareAlike',
-#     'version': '4.0',
-#     'slug': 'by-sa'
-# }
+THEME_COLOR = 'dark'
+THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
+THEME_COLOR_ENABLE_USER_OVERRIDE = True
+PYGMENTS_STYLE = 'emacs'
+PYGMENTS_STYLE_DARK = 'monokai'
 
-DEFAULT_PAGINATION = False
+# ===== PLUGINS ===============================================================
 
-# # Integrations
+# GITHUB_CORNER_URL = None
+
+# ===== INTEGRATIONS ==========================================================
+
 # ADD_THIS_ID = 'ra-77hh6723hhjd'
 # DISQUS_SITENAME = 'yoursite'
 # DUOSHUO_SITENAME = 'yoursite'
@@ -120,40 +140,16 @@ DEFAULT_PAGINATION = False
 # MATOMO_URL = ''
 # ISSO_URL = '//comments.sumnerevans.com'
 # ISSO_EMBED_JS_PATH = '/static/javascript/isso-dev.min.js'
-# ISSO_OPTIONS = {
-#     'avatar': 'false',
-#     'gravatar': 'true',
-#     'reply-to-self': 'true',
-#     'reply-notifications': 'true',
-# }
+# ISSO_OPTIONS = { 'avatar': 'false', 'gravatar': 'true', 
+#     'reply-to-self': 'true', 'reply-notifications': 'true', }
 
-STATIC_PATHS = [
-    'images',
-    'extra/custom.css',
-    'extra/favicon.ico',
-    # 'extra',
-]
+# ===== CUSTOMIZE =============================================================
 
-EXTRA_PATH_METADATA = {
-    'extra/custom.css': {'path': 'theme/custom.css'},
-    'extra/favicon.ico': {'path': 'favicon.ico'},
-#     'extra/robots.txt': {'path': 'robots.txt'},
-#     'extra/CNAME': {'path': 'CNAME'},
-#     'extra/LICENSE': {'path': 'LICENSE'},
-#     'extra/README': {'path': 'README'},
-}
+# FRIEND_LINKS = (
+#   ('通訊雜記', 'https://wenyuangg.github.io/'),
+# )
 
-CUSTOM_CSS = "theme/custom.css"
-
-THEME_COLOR = 'dark'
-THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
-THEME_COLOR_ENABLE_USER_OVERRIDE = True
-
-PYGMENTS_STYLE = 'emacs'
-PYGMENTS_STYLE_DARK = 'monokai'
-
-
-# ===== DEV Options ===========================================================
+# ===== DEV OPTIONS ===========================================================
 
 # USE_LESS = True
 

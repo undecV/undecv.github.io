@@ -5,7 +5,7 @@ Modified: 2021-03-04
 Category: Category
 Tags: [zh_TW, Add-ons, Extensions, Apps, Awesome List]
 Slug: AddonExt
-Authors: undecV
+Authors: [undecV]
 Summary: Awesome List of Brower Add-ons / Extensions
 ...
 
