@@ -1,0 +1,6 @@
+[submodule "plugins/pelican-yaml-metadata"]
+	path = plugins/pelican-yaml-metadata
+	url = https://github.com/pR0Ps/pelican-yaml-metadata
+[submodule "themes/Flex"]
+	path = themes/Flex
+	url = https://github.com/alexandrevicenzi/Flex.git
