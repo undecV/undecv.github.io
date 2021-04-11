@@ -6,7 +6,7 @@ Category: Category
 Tags: [zh_TW, Add-ons, Extensions, Apps, Awesome List]
 Slug: AddonExt
 Authors: [undecV]
-Summary: Awesome List of Brower Add-ons / Extensions
+Summary: Awesome List of Brower Add-ons / Extensions<br /><del>裝機必備的實用瀏覽器擴充套件大合集！</del>
 ...
 
 <!-- # Awesome List of Brower Add-ons / Extensions -->
@@ -57,7 +57,6 @@ Summary: Awesome List of Brower Add-ons / Extensions
 - `Tor Included`：Tor 瀏覽器內置
 
 ## 推薦軟體列表
-
 
 <h3>By Firefox - Mozilla Firefox 官方出品</h3>
 <ul>

@@ -1,7 +1,7 @@
 ---
 Title: 數位影像檔案格式
-Date: 2018-02-07 00:00
-Modified: 2018-02-07 00:00
+Date: 2018-02-07
+Modified: 2018-02-07
 Category: Category
 Tags: [zh_TW, Graphics, File Formats, Introduction]
 Slug: GraphicsFileFormats

@@ -1,7 +1,7 @@
 ---
-Title: BitTorrent 從入門到出門
-Date: 2019-12-11 00:00
-Modified: 2019-12-11 00:00
+Title: BitTorrent 種子下載從入門到出門
+Date: 2019-12-11
+Modified: 2019-12-11
 Category: Category
 Tags: [zh_TW, BitTorrent, Download, File Sharing, Tutorial, Introduction]
 Slug: BitTorrentIntro

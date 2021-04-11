@@ -1,7 +1,7 @@
 ---
 Title: Raspberry Pi 4B 搭建 NAS 第一話：外接式機械行動硬碟和 USB 篇
-Date: 2020-04-03 00:00
-Modified: 2020-04-03 00:00
+Date: 2020-04-03
+Modified: 2020-04-03
 Category: Category
 Tags: [zh_TW, Raspberry Pi, NAS, HDD, USB, USB HUB]
 Slug: rPi4BNASEp1

@@ -6,7 +6,7 @@ Category: Category
 Tags: [zh_TW, Awesome lists, Windows, Softwares, Apps]
 Slug: WinSoft
 Authors: [undecV]
-Summary: List of Windows Application Software<br /><del>裝機必備的實用軟體大合集！</del>
+Summary: Awesome List of Windows Application Software<br /><del>裝機必備的實用軟體大合集！</del>
 ...
 
 推薦一些 Windows 平台下的軟體， 適合日常以及非日常使用。<br />
