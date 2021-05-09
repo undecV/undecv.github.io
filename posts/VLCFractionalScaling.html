@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="zh_tw">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://undecv.github.io/theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+    href="https://undecv.github.io/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+          href="https://undecv.github.io/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light)"
+          href="https://undecv.github.io/theme/pygments/emacs.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="https://undecv.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://undecv.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://undecv.github.io/theme/font-awesome/css/solid.css">
+
+    <link href="https://undecv.github.io/theme/custom.css" rel="stylesheet">
+
+    <link href="https://undecv.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="キャンディージャー Atom">
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333">
+
+<meta name="author" content="undecV" />
+<meta name="description" content="は？Windows 竟然支援觸控熒幕？" />
+<meta name="keywords" content="zh_TW, VLC, Media Player, Windows, High DPI, Touchscreen, Fractional Scaling">
+
+
+<meta property="og:site_name" content="キャンディージャー"/>
+<meta property="og:title" content="Windows 下手動修正 VLC 界面縮放"/>
+<meta property="og:description" content="は？Windows 竟然支援觸控熒幕？"/>
+<meta property="og:locale" content="zh_TW"/>
+<meta property="og:url" content="https://undecv.github.io/posts/VLCFractionalScaling.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2021-05-10 00:00:00+08:00"/>
+<meta property="article:modified_time" content="2021-05-10 00:00:00+08:00"/>
+<meta property="article:author" content="https://undecv.github.io/author/undecv.html">
+<meta property="article:section" content="Category"/>
+<meta property="article:tag" content="zh_TW"/>
+<meta property="article:tag" content="VLC"/>
+<meta property="article:tag" content="Media Player"/>
+<meta property="article:tag" content="Windows"/>
+<meta property="article:tag" content="High DPI"/>
+<meta property="article:tag" content="Touchscreen"/>
+<meta property="article:tag" content="Fractional Scaling"/>
+<meta property="og:image" content="/images/128.png">
+
+  <title>キャンディージャー &ndash; Windows 下手動修正 VLC 界面縮放</title>
+
+</head>
+<body >
+  <aside>
+    <div>
+      <a href="https://undecv.github.io">
+        <img src="/images/128.png" alt="キャンディージャー" title="キャンディージャー">
+      </a>
+
+      <h1>
+        <a href="https://undecv.github.io">キャンディージャー</a>
+      </h1>
+
+<p>undecV's Blog "Candy Jar"</p>
+
+
+      <ul class="social">
+          <li>
+            <a  class="sc-github" href="https://github.com/undecv" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-twitter" href="https://twitter.com/phinhdgxiaohai" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-telegram" href="https://t.me/s/poi0048" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-rss" href="feeds/all.atom.xml" target="_blank">
+              <i class="fas fa-rss"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://undecv.github.io">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="https://undecv.github.io/feeds/all.atom.xml">Atom</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="VLCFractionalScaling">Windows 下手動修正 VLC 界面縮放</h1>
+    <p>
+      Posted on 週一 10 五月 2021 in <a href="https://undecv.github.io/category/category.html">Category</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Fix VLC UI fractional scaling in Windows.</p>
+<blockquote>
+<p><del>は？Windows 竟然支援觸控熒幕？</del></p>
+<p>Copyright © undecV.<br />
+<a href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a><br />
+This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+</blockquote>
+<p>高 DPI 熒幕是指是尺寸小並且有者高解析度的熒幕，但是在這高 DPI 的熒幕下，各種按鈕選單就小的就跟他的丁丁一樣，除非上滑鼠，不要說手指，用筆都很難按到。</p>
+<p>為了適配最新的熒幕科技，Windows 引入了 Fractional Scaling 縮放功能，讓視窗在高 DPI 熒幕上不會看得太小。</p>
+<p>具體設定專案是「設定」-&gt;「系統」-&gt;「顯示器」-&gt;「縮放與版面配置」的「變更文字、應用程式與其他項目的大小」。</p>
+<p>但是這就像把一張低畫素圖片放大一樣，一些沒有對此優化過的舊軟體放大後會出現鋸齒、錯位是在所難免的。
+原因就是早期的軟體界面設計都是用絕對的畫素作度量。</p>
+<p>VLC 的界面勉強可以觸控，VLC 在觸控熒幕下，左右滑可以前後跳轉進度，上下滑可以調節音量，其他動作，甚至播放暫停就只能點按鈕了。
+但是 VLC 的界面似乎不會隨著 Windows 的設定縮放，按鈕都太小很難按到。</p>
+<p>其他開源的 Windows 播放器，例如 MPC-HC，甚至連 Windows 內建的 UWP 應用程式 竟然都連種陽春的觸屏手勢支援都沒有。
+Windows Phone 版的 VLC 看似是一個解決辦法，但是官方說了這不是「完整版的 VLC」，而且上一個 release tag 在一年前。
+而，最新還在測試版的 VLC 4.0 將會改頭換面，就一起期待吧。</p>
+<p>所以需要就強行讓 VLC 縮放界面（。</p>
+<p>Step 1. 創立手稿程式。在你喜歡的地方創立一個 TXT 文字檔案，開啟輸入以下手稿語言指令碼內容：</p>
+<div class="highlight"><pre><span></span><code><span class="k">set</span> <span class="nv">QT_AUTO_SCREEN_SCALE_FACTOR</span><span class="p">=</span>0
+<span class="k">set</span> <span class="nv">QT_SCREEN_SCALE_FACTORS</span><span class="p">=</span><span class="nv">%縮放比例%</span>
+<span class="k">START</span> <span class="s2">&quot;&quot;</span> <span class="s2">&quot;</span><span class="nv">%VLC的安裝路徑%</span><span class="s2">\vlc.exe&quot;</span> <span class="nv">%*</span>
+</code></pre></div>
+
+<p>例如 VLC 預設的安裝路徑，縮放比例是 1.5，內容就是這樣：</p>
+<div class="highlight"><pre><span></span><code><span class="k">set</span> <span class="nv">QT_AUTO_SCREEN_SCALE_FACTOR</span><span class="p">=</span>0
+<span class="k">set</span> <span class="nv">QT_SCREEN_SCALE_FACTORS</span><span class="p">=</span>1.5
+<span class="k">START</span> <span class="s2">&quot;&quot;</span> <span class="s2">&quot;C:\Program Files\VideoLAN\VLC\vlc.exe&quot;</span> <span class="nv">%*</span>
+</code></pre></div>
+
+<p>儲存並且改後綴名為 <code>.bat</code>，例如檔名叫做 <code>VLC.bat</code>。</p>
+<p>Step 2. 測試。這時候你可以，雙擊「開啟」這個手稿程式，或是將影片拖動到這個檔案的圖示上，就可以用縮放後的界面播放影片了。</p>
+<p>Step 3. 放置。確認手稿程式沒有 BUG 之後，放到你喜歡的地方，例如 VLC 預設的安裝路徑。</p>
+<p>Step 4. 將手稿程式關聯到檔案，以後就可以直接用縮放後的 VLC 開啟影片檔案了。</p>
+<p>找到你要看的影片檔案，例如 mp4 檔案，右鍵 Open with -&gt; Choose another app -&gt; 滑到底 More Apps ↓ -&gt; 滑到底 <code>Look for another app on this PC</code>，選擇方才放好的手稿程式。</p>
+<p>下次遇到其他格式的影片檔案只要在 Open with -&gt; Choose another app 彈出的列表中尋找，若沒有就再重複上述動作。</p>
+<p>是不是巨醜（，更新之前就只能將就著用吧。</p>
+<h2>Reference</h2>
+<ul>
+<li>VideoLAN: <a href="https://nightlies.videolan.org/">VLC media player continuous nightly builds</a></li>
+<li>The VideoLAN Forums: <a href="https://forum.videolan.org/viewtopic.php?t=144476">How to Enable hiDPI Scaling?</a></li>
+<li>bgstack15.wordpress.com: <a href="https://bgstack15.wordpress.com/2019/04/11/fix-vlc-ui-scaling-problems/">Fix vlc ui scaling problems</a></li>
+<li>Unix &amp; Linux Stack Exchange: <a href="https://unix.stackexchange.com/questions/557181/how-to-increase-dpi-for-vlc-media-player-in-cinnamon-on-uhd-display">How to increase DPI for VLC media player in Cinnamon on UHD display?</a></li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://undecv.github.io/tag/zh_tw.html">zh_TW</a>
+      <a href="https://undecv.github.io/tag/vlc.html">VLC</a>
+      <a href="https://undecv.github.io/tag/media-player.html">Media Player</a>
+      <a href="https://undecv.github.io/tag/windows.html">Windows</a>
+      <a href="https://undecv.github.io/tag/high-dpi.html">High DPI</a>
+      <a href="https://undecv.github.io/tag/touchscreen.html">Touchscreen</a>
+      <a href="https://undecv.github.io/tag/fractional-scaling.html">Fractional Scaling</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy; 2021 キャンディージャー</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="https://undecv.github.io/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="dark"
+          type="text/javascript">
+  </script>
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " キャンディージャー ",
+  "url" : "https://undecv.github.io",
+  "image": "/images/128.png",
+  "description": "undecV's Blog "Candy Jar""
+}
+</script>
+
+
+</body>
+</html>

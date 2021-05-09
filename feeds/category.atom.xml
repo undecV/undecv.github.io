@@ -1,8 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>キャンディージャー - Category</title><link href="https://undecv.github.io/" rel="alternate"></link><link href="https://undecv.github.io/feeds/category.atom.xml" rel="self"></link><id>https://undecv.github.io/</id><updated>2021-04-12T00:00:00+08:00</updated><subtitle>undecV's Blog "Candy Jar"</subtitle><entry><title>把檔案壓縮影片轉檔任務放進佇列！用 WSL Task Spooler 排隊 Windows 的指令</title><link href="https://undecv.github.io/posts/WslTsp.html" rel="alternate"></link><published>2021-04-12T00:00:00+08:00</published><updated>2021-04-12T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2021-04-12:/posts/WslTsp.html</id><summary type="html">&lt;p&gt;WSL Task Spooler Work With Batch Script&lt;/p&gt;</summary><content type="html">&lt;!-- # WSL Task Spooler Work With Batch Script --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>キャンディージャー - Category</title><link href="https://undecv.github.io/" rel="alternate"></link><link href="https://undecv.github.io/feeds/category.atom.xml" rel="self"></link><id>https://undecv.github.io/</id><updated>2021-05-10T00:00:00+08:00</updated><subtitle>undecV's Blog "Candy Jar"</subtitle><entry><title>推薦的瀏覽器擴充套件列表</title><link href="https://undecv.github.io/posts/AddonExt.html" rel="alternate"></link><published>2021-05-10T00:00:00+08:00</published><updated>2021-05-10T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2021-05-10:/posts/AddonExt.html</id><summary type="html">&lt;p&gt;Awesome List of Brower Add-ons / Extensions&lt;/p&gt;</summary><content type="html">&lt;!-- # Awesome List of Brower Add-ons / Extensions --&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Copyright © undecV 2021 All rights reserved.&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;什麼？您在用 IE？&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;Version 0.8.0 (2021-05-10): 更新和修正了部分內容。&lt;/p&gt;
+&lt;p&gt;Copyright © undecV.&lt;br /&gt;
+&lt;a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;&lt;img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;br /&gt;
+This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;概論&lt;/h2&gt;
+&lt;p&gt;提示，本文討論的範圍是 瀏覽器擴充套件；
+並且不太包括一些 SaaS 網頁應用和服務所附帶的擴充套件。&lt;/p&gt;
+&lt;p&gt;同樣地，文章其中的一些擴充套件，我可能不常用，甚至時下可能還沒有安裝，但我一定都有用過、體驗過。&lt;/p&gt;
+&lt;p&gt;也請注意，這裡的選擇標準非常的... 主觀。（不是排名，不分先後）&lt;br /&gt;
+以下是粗略的選擇的標準：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;確實能夠解決問題，且有效的解決問題；&lt;/li&gt;
+&lt;li&gt;沒有騷擾性質的廣告；&lt;/li&gt;
+&lt;li&gt;界面端莊優雅，易於使用。&lt;/li&gt;
+&lt;li&gt;FOSS，即是 &lt;a href="https://zh.wikipedia.org/wiki/自由软件"&gt;自由軟體（Free Software）&lt;/a&gt; 以及 &lt;a href="https://zh.wikipedia.org/wiki/开源软件"&gt;開放原始碼軟體（Open Source Software，OSS）&lt;/a&gt;，這裡的 Free 表示「自由（libre）」而不是「免費（gratis）」；開放原始碼軟體保留一部分權利並允許用戶學習、修改、增進提高這款軟體的品質。自由軟體更加的開放，可以不受限制地自由使用、複製、研究、修改和分發。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;標記&lt;/h2&gt;
+&lt;p&gt;本文的標記可能並不完全或有誤，甚至隨着時間的流逝而與現時不符，所以&lt;strong&gt;僅供參考&lt;/strong&gt;，若發現有漏標或錯標，又或是你有更好的軟體選擇，歡迎在這個 &lt;a href="https://github.com/undecV/undecV_Tutorial/issues"&gt;Repo&lt;/a&gt; 提出修改建議：）&lt;/p&gt;
+&lt;p&gt;許可協議：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;沒有標記的，一般來說都是&lt;a href="https://zh.wikipedia.org/wiki/免費軟體"&gt;免費軟體（Freeware）&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt;：FOSS，自由軟體（Free Software）和開放原始碼軟體（Open Source Software，OSS）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;商業&lt;/code&gt;：&lt;a href="https://zh.wikipedia.org/wiki/商业软件"&gt;商業軟體（Commercial Software）&lt;/a&gt;，一般來說，要錢買的。但有免費版本的不標示。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以及標籤：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;By Firefox&lt;/code&gt;：Mozilla Firefox 官方出品&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AMO Recommended&lt;/code&gt;：Firefox 擴充套件站推薦&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tor Included&lt;/code&gt;：Tor 瀏覽器內置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;推薦軟體列表&lt;/h2&gt;
+&lt;h3&gt;By Firefox - Mozilla Firefox 官方出品&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Firefox Color&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/firefox-color/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://color.firefox.com/"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/mozilla/FirefoxColor/"&gt;GitHub&lt;/a&gt;) 快速客製化 Firefox 瀏覽器的外觀。 [&lt;code&gt;# By Firefox&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Firefox Multi-Account Containers&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/mozilla/multi-account-containers/"&gt;GitHub&lt;/a&gt;) 多重賬戶登錄（Cookies 隔離）。 [&lt;code&gt;# By Firefox&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Facebook Container&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/facebook-container/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/mozilla/contain-facebook"&gt;GitHub&lt;/a&gt;) 隔離 Facebook，阻擋 Facebook 的追蹤器以保護隱私。 [&lt;code&gt;# By Firefox&lt;/code&gt;] &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Android - 行動端&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Google Search Fixer&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/android/addon/google-search-fixer/"&gt;Android Add-on&lt;/a&gt;) (&lt;a href="https://github.com/wisniewskit/google-search-fixer"&gt;GitHub&lt;/a&gt;) 改善 Google 搜尋在 Firefox Android 上的體驗。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Tabs - 分頁增強&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Undo Close Tab&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/undoclosetabbutton/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/M-Reimer/undoclosetab"&gt;GitHub&lt;/a&gt;) 再次打開最近關閉的分頁。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tree Style Tab&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://piro.sakura.ne.jp/xul/_treestyletab.html.en"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/piroor/treestyletab"&gt;GitHub&lt;/a&gt;) 以樹狀的形式列出開啟的分頁。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;FoxyTab&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/foxytab/"&gt;Add-on&lt;/a&gt;) 增加超多分頁相關便利的操作。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;SingleFile&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/single-file/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/gildas-lormeau/SingleFile"&gt;GitHub&lt;/a&gt;) 將網頁存檔為單一個可完全離線閱讀的 HTML 檔。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Popup window&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/popup-window/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/ettoolong/PopupWindow"&gt;GitHub&lt;/a&gt;) 用沒有工具列的簡潔的彈出式視窗打開分頁。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OneTab&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/onetab/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://www.one-tab.com/"&gt;Home Page&lt;/a&gt;) 快速按組收納分頁到列表。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Tabliss&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/onetab/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://tabliss.io/"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/joelshepherd/tabliss/"&gt;GitHub&lt;/a&gt;) 好看、可客製化的新分頁。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Open in Sidebar&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/open-link-in-sidebar/"&gt;Add-on&lt;/a&gt;) 在側邊欄打開頁面。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Sidebery&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/sidebery/"&gt;Add-on&lt;/a&gt;) 側邊欄的多功能分頁管理。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Tab Session Manager&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/"&gt;Add-on&lt;/a&gt;) 自動儲存恢復同步視窗分頁。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Ad Blocker &amp; Privacy - 擋廣告和隱私保護&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;HTTPS Everywhere&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://addons.mozilla.org/en-US/android/addon/https-everywhere/"&gt;Android Add-on&lt;/a&gt;) (&lt;a href="https://www.eff.org/https-everywhere"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/EFForg/https-everywhere"&gt;GitHub&lt;/a&gt;) 電子前哨基金會出品，優先使用更安全的 HTTPS 協定代替不安全的 HTTP 瀏覽網頁。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;, &lt;code&gt;# EFF&lt;/code&gt;, &lt;code&gt;# Tor Included&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Privacy Badger&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://addons.mozilla.org/en-US/android/addon/privacy-badger17/"&gt;Android Add-on&lt;/a&gt;) (&lt;a href="https://privacybadger.org/"&gt;Home Page&lt;/a&gt;) 電子前哨基金會出品，阻擋追蹤器。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;, &lt;code&gt;# EFF&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;uBlock Origin&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://addons.mozilla.org/en-US/android/addon/ublock-origin/"&gt;Android Add-on&lt;/a&gt;) (&lt;a href="https://zh.wikipedia.org/zh-tw/UBlock_Origin"&gt;Wikipedia&lt;/a&gt;) (&lt;a href="https://github.com/gorhill/uBlock"&gt;GitHub&lt;/a&gt;) 擋廣告。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Google Enhancement - Google 增強&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;uBlacklist&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/ublacklist/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://iorate.github.io/ublacklist/"&gt;Home Page&lt;/a&gt;) 封鎖指定搜尋結果。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;To Google Translate&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/to-google-translate/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/itsecurityco/to-google-translate"&gt;GitHub&lt;/a&gt;) 快速使用 Google 翻譯。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Google search link fix&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/palant/searchlinkfix"&gt;GitHub&lt;/a&gt;) 取消 Google 搜尋結果的重新导向。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;YouTube Video and Audio Downloader&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/youtube_downloader_webx/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://technologyto.com/extractor.html"&gt;Home Page&lt;/a&gt;) 下載 YouTube 的影片。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;YouTube Popout Player&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/youtube-popout-player/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://rthaut.github.io/YouTubePopoutPlayer/"&gt;Home Page&lt;/a&gt;) 用沒有工具列的簡潔的彈出式視窗打開 YouTube 影片。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Content Farm Terminator&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/content-farm-terminator/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/danny0838/content-farm-terminator"&gt;GitHub&lt;/a&gt;) 標示並封鎖內容農場。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;YouTube High Definition&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/firefox/addon/youtube-high-definition/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://addons.mozilla.org/android/addon/youtube-high-definition/"&gt;Android Add-on&lt;/a&gt;) (&lt;a href="https://github.com/danny0838/content-farm-terminator"&gt;GitHub&lt;/a&gt;) YouTube 鎖定高畫質、播放速率、音量等設定。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] (&lt;a href="https://undecv.github.io/posts/YouTubeHighDefinition.html#YouTubeHighDefinition"&gt;本站相關文章&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;UserScript &amp; UserStyle - 油猴腳本和客製外觀&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Greasemonkey&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://www.greasespot.net/"&gt;Home Page&lt;/a&gt;) UserScript 油猴腳本。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tampermonkey&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://www.tampermonkey.net/"&gt;GitHub&lt;/a&gt;) UserScript 油猴腳本。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Stylus&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/styl-us/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://add0n.com/stylus.html"&gt;GitHub&lt;/a&gt;) UserStyle 客製外觀。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Theme &amp; Style - 主題和外觀&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Dark Reader&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/darkreader/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://addons.mozilla.org/en-US/android/addon/darkreader/"&gt;Android Add-on&lt;/a&gt;) (&lt;a href="https://darkreader.org/"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/darkreader/darkreader"&gt;GitHub&lt;/a&gt;) 為每個網頁開啟夜間＼黑暗模式。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Web Service - 服務&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Steam Database&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/steam-database/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://steamdb.info/extension/"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/SteamDatabase/BrowserExtension"&gt;GitHub&lt;/a&gt;) Steam 歷史價格個其他資訊。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pushbullet&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/pushbullet/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://www.pushbullet.com/apps"&gt;Home Page&lt;/a&gt;) 傳送分頁、訊息、或任何東西到手機或是其他設備。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Privacy Pass&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/privacy-pass/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://privacypass.github.io/"&gt;Home Page&lt;/a&gt;) 快速通過 Cloudflare 和 hCaptcha 的人機驗證。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Octotree&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/octotree/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://www.octotree.io/"&gt;Home Page&lt;/a&gt;) 以樹的方式展示 GitHub 的 Repo 的檔案。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Copy and Paste - 拷貝和粘貼&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Copy URL To Clipboard&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/url2clipboard/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/asamuzaK/url2clipboard"&gt;GitHub&lt;/a&gt;) 以各種格式拷貝鏈接。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Copy as Markdown&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/copy-as-markdown/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/yorkxin/copy-as-markdown"&gt;GitHub&lt;/a&gt;) 以 Markdown 格式拷貝鏈接、分頁、圖片。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Copy PlainText&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/copy-plaintext/"&gt;Add-on&lt;/a&gt;) 以無格式拷貝文字。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Absolute Enable Right Click &amp; Copy&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/absolute-enable-right-click/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://greasyfork.org/en/scripts/23772-absolute-enable-right-click-copy"&gt;GreasyFork&lt;/a&gt;) 強制啟用滑鼠右鍵選單和拷貝功能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Browser Configuration - 瀏覽器設定&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Bookmark Dupes&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/bookmark-dupes/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/vaeth/bookmarkdupes/"&gt;GitHub&lt;/a&gt;) 尋找和清理重複書籤。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Cookie Quick Manager&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/cookie-quick-manager/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/ysard/cookie-quick-manager"&gt;GitHub&lt;/a&gt;) 編輯 Cookies。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;FoxyProxy Standard&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://getfoxyproxy.org/"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/foxyproxy/firefox-extension"&gt;GitHub&lt;/a&gt;) 功能強大的代理設定。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Quick Accept-Language Switcher&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/quick-accept-language-switc/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/callahad/quick-accept-language-switcher"&gt;GitHub&lt;/a&gt;) 快速切換網頁請求中 Accept-Language。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;User-Agent Switcher&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher-revived/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://mybrowseraddon.com/useragent-switcher.html"&gt;Home Page&lt;/a&gt;) 快速切換網頁請求中 User-Agent。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Utilities - 實用工具&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Markdown Here&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/markdown-here/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://markdown-here.com/"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/adam-p/markdown-here"&gt;GitHub&lt;/a&gt;) 用 Markdown 編寫郵件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Feedbro&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://nodetics.com/feedbro/"&gt;Home Page&lt;/a&gt;) RSS 聚合、閱讀器。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Aria2 Download Manager Integration&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/aria2-integration/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/RossWang/Aria2-Integration"&gt;GitHub&lt;/a&gt;) 用 Aria2 下載檔案。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--
+Flags filter: ['Abandon', 'Pro', 'Old', 'Discontinued', 'Disable', 'Hide']
+Count: {filter: 6, folders: 11, elements: 44}
+--&gt;
+
+&lt;h2&gt;如何尋找實用優秀的擴充套件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;看緣分（這是真...&lt;/li&gt;
+&lt;li&gt;擴充套件的來源單一、通常都來自瀏覽器所經營的擴充套件商店。
+  擴充套件的安全性也通常有他們的把關，擴充套件商店也會精選出一些口碑良好的擴充套件。&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://addons.mozilla.org/en-US/firefox/"&gt;Add-ons for Firefox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chrome.google.com/webstore/category/extensions"&gt;Chrome Web Store - Extensions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home"&gt;Microsoft Edge Add-ons&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;推介軟體的部落格＼網站也會推介擴充套件；&lt;/li&gt;
+&lt;li&gt;尋找現有擴充套件的替代品：&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://alternativeto.net/"&gt;AlternativeTo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;Release Notes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;0.8.0 (2021-05-10): 更新和修正了部分內容。&lt;/li&gt;
+&lt;li&gt;0.7.0 (2021-03-04)&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Awesome Lists"></category><category term="Firefox"></category><category term="Add-ons"></category><category term="Extensions"></category></entry><entry><title>Windows 下手動修正 VLC 界面縮放</title><link href="https://undecv.github.io/posts/VLCFractionalScaling.html" rel="alternate"></link><published>2021-05-10T00:00:00+08:00</published><updated>2021-05-10T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2021-05-10:/posts/VLCFractionalScaling.html</id><summary type="html">&lt;p&gt;&lt;del&gt;は？Windows 竟然支援觸控熒幕？&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Fix VLC UI fractional scaling in Windows.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;del&gt;は？Windows 竟然支援觸控熒幕？&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;Copyright © undecV.&lt;br /&gt;
+&lt;a href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;br /&gt;
+This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;高 DPI 熒幕是指是尺寸小並且有者高解析度的熒幕，但是在這高 DPI 的熒幕下，各種按鈕選單就小的就跟他的丁丁一樣，除非上滑鼠，不要說手指，用筆都很難按到。&lt;/p&gt;
+&lt;p&gt;為了適配最新的熒幕科技，Windows 引入了 Fractional Scaling 縮放功能，讓視窗在高 DPI 熒幕上不會看得太小。&lt;/p&gt;
+&lt;p&gt;具體設定專案是「設定」-&amp;gt;「系統」-&amp;gt;「顯示器」-&amp;gt;「縮放與版面配置」的「變更文字、應用程式與其他項目的大小」。&lt;/p&gt;
+&lt;p&gt;但是這就像把一張低畫素圖片放大一樣，一些沒有對此優化過的舊軟體放大後會出現鋸齒、錯位是在所難免的。
+原因就是早期的軟體界面設計都是用絕對的畫素作度量。&lt;/p&gt;
+&lt;p&gt;VLC 的界面勉強可以觸控，VLC 在觸控熒幕下，左右滑可以前後跳轉進度，上下滑可以調節音量，其他動作，甚至播放暫停就只能點按鈕了。
+但是 VLC 的界面似乎不會隨著 Windows 的設定縮放，按鈕都太小很難按到。&lt;/p&gt;
+&lt;p&gt;其他開源的 Windows 播放器，例如 MPC-HC，甚至連 Windows 內建的 UWP 應用程式 竟然都連種陽春的觸屏手勢支援都沒有。
+Windows Phone 版的 VLC 看似是一個解決辦法，但是官方說了這不是「完整版的 VLC」，而且上一個 release tag 在一年前。
+而，最新還在測試版的 VLC 4.0 將會改頭換面，就一起期待吧。&lt;/p&gt;
+&lt;p&gt;所以需要就強行讓 VLC 縮放界面（。&lt;/p&gt;
+&lt;p&gt;Step 1. 創立手稿程式。在你喜歡的地方創立一個 TXT 文字檔案，開啟輸入以下手稿語言指令碼內容：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nv"&gt;QT_AUTO_SCREEN_SCALE_FACTOR&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;0
+&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nv"&gt;QT_SCREEN_SCALE_FACTORS&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;%縮放比例%&lt;/span&gt;
+&lt;span class="k"&gt;START&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;%VLC的安裝路徑%&lt;/span&gt;&lt;span class="s2"&gt;\vlc.exe&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;%*&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;例如 VLC 預設的安裝路徑，縮放比例是 1.5，內容就是這樣：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nv"&gt;QT_AUTO_SCREEN_SCALE_FACTOR&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;0
+&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nv"&gt;QT_SCREEN_SCALE_FACTORS&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;1.5
+&lt;span class="k"&gt;START&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;C:\Program Files\VideoLAN\VLC\vlc.exe&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;%*&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;儲存並且改後綴名為 &lt;code&gt;.bat&lt;/code&gt;，例如檔名叫做 &lt;code&gt;VLC.bat&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;Step 2. 測試。這時候你可以，雙擊「開啟」這個手稿程式，或是將影片拖動到這個檔案的圖示上，就可以用縮放後的界面播放影片了。&lt;/p&gt;
+&lt;p&gt;Step 3. 放置。確認手稿程式沒有 BUG 之後，放到你喜歡的地方，例如 VLC 預設的安裝路徑。&lt;/p&gt;
+&lt;p&gt;Step 4. 將手稿程式關聯到檔案，以後就可以直接用縮放後的 VLC 開啟影片檔案了。&lt;/p&gt;
+&lt;p&gt;找到你要看的影片檔案，例如 mp4 檔案，右鍵 Open with -&amp;gt; Choose another app -&amp;gt; 滑到底 More Apps ↓ -&amp;gt; 滑到底 &lt;code&gt;Look for another app on this PC&lt;/code&gt;，選擇方才放好的手稿程式。&lt;/p&gt;
+&lt;p&gt;下次遇到其他格式的影片檔案只要在 Open with -&amp;gt; Choose another app 彈出的列表中尋找，若沒有就再重複上述動作。&lt;/p&gt;
+&lt;p&gt;是不是巨醜（，更新之前就只能將就著用吧。&lt;/p&gt;
+&lt;h2&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;VideoLAN: &lt;a href="https://nightlies.videolan.org/"&gt;VLC media player continuous nightly builds&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The VideoLAN Forums: &lt;a href="https://forum.videolan.org/viewtopic.php?t=144476"&gt;How to Enable hiDPI Scaling?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;bgstack15.wordpress.com: &lt;a href="https://bgstack15.wordpress.com/2019/04/11/fix-vlc-ui-scaling-problems/"&gt;Fix vlc ui scaling problems&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Unix &amp;amp; Linux Stack Exchange: &lt;a href="https://unix.stackexchange.com/questions/557181/how-to-increase-dpi-for-vlc-media-player-in-cinnamon-on-uhd-display"&gt;How to increase DPI for VLC media player in Cinnamon on UHD display?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="VLC"></category><category term="Media Player"></category><category term="Windows"></category><category term="High DPI"></category><category term="Touchscreen"></category><category term="Fractional Scaling"></category></entry><entry><title>YouTube 鎖定高畫質</title><link href="https://undecv.github.io/posts/YouTubeHighDefinition.html" rel="alternate"></link><published>2021-05-10T00:00:00+08:00</published><updated>2021-05-10T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2021-05-10:/posts/YouTubeHighDefinition.html</id><summary type="html">&lt;p&gt;&lt;del&gt;你手機可以看 4K？&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;!-- # YouTube 鎖定高畫質 --&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;del&gt;你手機可以看 4K？&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;Copyright © undecV.&lt;br /&gt;
+&lt;a href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;br /&gt;
+This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最近的 YouTube 出於奇怪的理由，調降了預設的影片畫質 &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;，
+甚至修改了畫質設定 &lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt;，用策略替代原本的解析度選項，
+無法鎖定最高畫質，很難自動選擇到 1080p 甚至 720p，
+若想看 1080p 或更高畫質會需要在每個影片切換，
+這迷惑行為造成了視聽者的困擾。&lt;/p&gt;
+&lt;p&gt;電信公司是壟斷資本主義的代表、人類社會的毒瘤，無需給予他們同情，亦不打算配合他們的頻寬節約計劃。&lt;/p&gt;
+&lt;p&gt;電腦端若使用 Firefox 瀏覽器，
+可以安裝擴充套件「YouTube High Definition」(GPL-3.0) &lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="#fn:3"&gt;3&lt;/a&gt;&lt;/sup&gt;，
+在擴充套件中可以選定預設的影片畫質，甚至播放速率、音量等設定。&lt;/p&gt;
+&lt;p&gt;Android 的 YouTube APP 無法度，
+可以切換到 Firefox 瀏覽器 Android 版。
+使用瀏覽器看 YouTube 有很多優勢，
+除了雙擊影片左右邊快進倒退等熟悉便利的操作依然可用，
+還可以實現課金用戶才有的後臺播放，
+亦可以使用同樣的瀏覽器擴充套件 &lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="#fn:4"&gt;4&lt;/a&gt;&lt;/sup&gt; 實現鎖定高畫質的功能，
+在 Beta 版的 Firefox 甚至支援畫中畫模式（影片全熒幕後切換其他的 App），
+更甚至可以實現擋廣告（但當擋廣告會影響創作者收益所以不推薦）。
+缺憾是在看 16:9 標準比例的影片的時候，還無法放大填充到超長的全熒幕上。&lt;/p&gt;
+&lt;p&gt;若覺得每次都要點開瀏覽器再找到 YouTube 非常麻煩，
+可以將 YouTube 添加到桌面，
+進入 YoutTube 首頁後，在工具列點開「⋮」選單，選擇「添加到桌面」選項，
+編輯名字後即可在桌面添加捷徑。&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;https://www.engadget.com/2020-03-24-youtube-standard-definition-default-worldwide-coronavirus-covid-19.html&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;https://www.engadget.com/youtube-picture-quality-settings-mobile-apps-ios-android-155400433.html&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:3"&gt;
+&lt;p&gt;https://addons.mozilla.org/firefox/addon/youtube-high-definition/&amp;#160;&lt;a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:4"&gt;
+&lt;p&gt;https://addons.mozilla.org/android/addon/youtube-high-definition/&amp;#160;&lt;a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Firefox"></category><category term="Add-ons"></category><category term="Extensions"></category><category term="YouTube"></category><category term="YouTube High Definition"></category></entry><entry><title>把檔案壓縮影片轉檔任務放進佇列！用 WSL Task Spooler 排隊 Windows 的指令</title><link href="https://undecv.github.io/posts/WslTsp.html" rel="alternate"></link><published>2021-04-12T00:00:00+08:00</published><updated>2021-04-12T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2021-04-12:/posts/WslTsp.html</id><summary type="html">&lt;p&gt;WSL Task Spooler Work With Batch Script&lt;/p&gt;</summary><content type="html">&lt;!-- # WSL Task Spooler Work With Batch Script --&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Copyright © undecV All rights reserved.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;有時候需要執行一些時間長、需要大量系統資源的指令，例如巨量資料的計算、機器學習，或是更常用的檔案壓縮、影片轉檔。希望這些高負載的指令可以被順序執行而不是同時執行，同時執行會佔用過多的系統資源，不僅互相拖慢速度，也影響到其他程式的流暢執行，大幅降低了摸魚體驗。&lt;/p&gt;
 &lt;p&gt;Linux 上有一個滿足這個需求的工具 &lt;a href="https://vicerveza.homeunix.net/~viric/soft/ts/"&gt;Task Spooler&lt;/a&gt; (tsp)，Windows 上我沒有找到理想的替代品，但是，Windows 有 WSL。&lt;/p&gt;
@@ -44,7 +273,7 @@
 聯合一眾 Friends 做出了曠古未聞空前絕後驚世駭俗的 Windows Subsystem for Linux (WSL)，
 WSL 可以讓 Windows 執行 Linux 的程式，並且可以串接 Windows 的指令。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;搜尋 "Turn Windows features on or off"，開啟 "Windows Subsystem for Linux"，在安裝完成後會需要重新開機。&lt;/li&gt;
+&lt;li&gt;在開始功能表中搜尋 "Turn Windows features on or off"，開啟 "Windows Subsystem for Linux"，在安裝完成後會需要重新開機。&lt;/li&gt;
 &lt;li&gt;在 "Microsoft Store" 中，搜尋 "WSL" 即可找到諸如 Debian、Ubuntu、SUSE、Kali 各發行版，如果你是 Linux 新手，可以試試好上手的 &lt;a href="https://www.microsoft.com/store/productId/9NBLGGH4MSV6"&gt;Ubuntu&lt;/a&gt;，後面也會拿這個舉例。&lt;/li&gt;
 &lt;li&gt;開始選單會出現安裝後的 Ubuntu，初次使用會需要設定 UNIX 使用者名稱和密碼。這些都不會影響到原本的作業系統，忘記密碼也可以透過特殊手段重設。當你看到 &lt;code&gt;使用者名稱@電腦名:~$&lt;/code&gt; 的時候，到此你的 WSL 的設定就完成了。&lt;/li&gt;
 &lt;/ol&gt;
@@ -102,142 +331,7 @@ tsp -C          &lt;span class="c1"&gt;# 大寫 C，清除已經完成的任務&
 &lt;p&gt;在監視 Task Spooler 的任務列表的終端機中，就會出現當前任務的狀態。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;TL;DR：參數 &lt;code&gt;-f&lt;/code&gt; 會阻止客戶端把指令 Fork 到背景等待執行。在我的測試中，若不加這個參數會導致加入佇列後直接執行的任務卡住，導致任務無法完成，也就沒辦法繼續執行後面的任務。&lt;/p&gt;
-&lt;/blockquote&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="WSL"></category><category term="Linux"></category><category term="Task Spooler"></category><category term="Shell Script"></category><category term="File Archive"></category><category term="7-Zip"></category><category term="Queue"></category></entry><entry><title>推薦的網頁瀏覽器擴充套件列表</title><link href="https://undecv.github.io/posts/AddonExt.html" rel="alternate"></link><published>2021-03-04T00:00:00+08:00</published><updated>2021-03-04T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2021-03-04:/posts/AddonExt.html</id><summary type="html">&lt;p&gt;Awesome List of Brower Add-ons / Extensions&lt;br /&gt;&lt;del&gt;裝機必備的實用瀏覽器擴充套件大合集！&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;!-- # Awesome List of Brower Add-ons / Extensions --&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;del&gt;什麼？您在用 IE？&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;Version 0.7.0 (2021-03-04)&lt;/p&gt;
-&lt;p&gt;Copyright © 2020 undecV.&lt;br /&gt;
-&lt;a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;&lt;img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;br /&gt;
-This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;概論&lt;/h2&gt;
-&lt;p&gt;提示，本文討論的範圍是 瀏覽器擴充套件；
-並且不太包括一些 SaaS 網頁應用和服務所附帶的擴充套件。&lt;/p&gt;
-&lt;p&gt;同樣地，文章其中的一些擴充套件，我可能不常用，甚至時下可能還沒有安裝，但我一定都有用過、體驗過。&lt;/p&gt;
-&lt;p&gt;也請注意，這裡的選擇標準非常的... 主觀。（不是排名，不分先後）&lt;br /&gt;
-以下是粗略的選擇的標準：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;確實能夠解決問題，且有效的解決問題；&lt;/li&gt;
-&lt;li&gt;沒有騷擾性質的廣告；&lt;/li&gt;
-&lt;li&gt;界面端莊優雅，易於使用。&lt;/li&gt;
-&lt;li&gt;FOSS，即是 &lt;a href="https://zh.wikipedia.org/wiki/自由软件"&gt;自由軟體（Free Software）&lt;/a&gt; 以及 &lt;a href="https://zh.wikipedia.org/wiki/开源软件"&gt;開放原始碼軟體（Open Source Software，OSS）&lt;/a&gt;，這裡的 Free 表示「自由（libre）」而不是「免費（gratis）」；開放原始碼軟體保留一部分權利並允許用戶學習、修改、增進提高這款軟體的品質。自由軟體更加的開放，可以不受限制地自由使用、複製、研究、修改和分發。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;標記&lt;/h2&gt;
-&lt;p&gt;本文的標記可能並不完全或有誤，甚至隨着時間的流逝而與現時不符，所以&lt;strong&gt;僅供參考&lt;/strong&gt;，若發現有漏標或錯標，又或是你有更好的軟體選擇，歡迎在這個 &lt;a href="https://github.com/undecV/undecV_Tutorial/issues"&gt;Repo&lt;/a&gt; 提出修改建議：）&lt;/p&gt;
-&lt;p&gt;許可協議：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;沒有標記的，一般來說都是&lt;a href="https://zh.wikipedia.org/wiki/免費軟體"&gt;免費軟體（Freeware）&lt;/a&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt;：FOSS，自由軟體（Free Software）和開放原始碼軟體（Open Source Software，OSS）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;商業&lt;/code&gt;：&lt;a href="https://zh.wikipedia.org/wiki/商业软件"&gt;商業軟體（Commercial Software）&lt;/a&gt;，一般來說，要錢買的。但有免費版本的不標示。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;以及標籤：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;By Firefox&lt;/code&gt;：Mozilla Firefox 官方出品&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;AMO Recommended&lt;/code&gt;：Firefox 擴充套件站推薦&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Tor Included&lt;/code&gt;：Tor 瀏覽器內置&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;推薦軟體列表&lt;/h2&gt;
-&lt;h3&gt;By Firefox - Mozilla Firefox 官方出品&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Firefox Color&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/firefox-color/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://color.firefox.com/"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/mozilla/FirefoxColor/"&gt;GitHub&lt;/a&gt;) 快速客製化 Firefox 瀏覽器的外觀。 [&lt;code&gt;# By Firefox&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Firefox Multi-Account Containers&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/mozilla/multi-account-containers/"&gt;GitHub&lt;/a&gt;) 多重賬戶登錄（Cookies 隔離）。 [&lt;code&gt;# By Firefox&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Facebook Container&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/facebook-container/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/mozilla/contain-facebook"&gt;GitHub&lt;/a&gt;) 隔離 Facebook，阻擋 Facebook 的追蹤器以保護隱私。 [&lt;code&gt;# By Firefox&lt;/code&gt;] &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Android - 行動端&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Google Search Fixer&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/android/addon/google-search-fixer/"&gt;Android Add-on&lt;/a&gt;) (&lt;a href="https://github.com/wisniewskit/google-search-fixer"&gt;GitHub&lt;/a&gt;) 改善 Google 搜尋在 Firefox Android 上的體驗。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Tabs - 分頁增強&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Undo Close Tab&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/undoclosetabbutton/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/M-Reimer/undoclosetab"&gt;GitHub&lt;/a&gt;) 再次打開最近關閉的分頁。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Tree Style Tab&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://piro.sakura.ne.jp/xul/_treestyletab.html.en"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/piroor/treestyletab"&gt;GitHub&lt;/a&gt;) 以樹狀的形式列出開啟的分頁。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;FoxyTab&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/foxytab/"&gt;Add-on&lt;/a&gt;) 增加超多分頁相關便利的操作。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;SingleFile&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/single-file/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/gildas-lormeau/SingleFile"&gt;GitHub&lt;/a&gt;) 將網頁存檔為單一個可完全離線閱讀的 HTML 檔。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Popup window&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/popup-window/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/ettoolong/PopupWindow"&gt;GitHub&lt;/a&gt;) 用沒有工具列的簡潔的彈出式視窗打開分頁。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;OneTab&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/onetab/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://www.one-tab.com/"&gt;Home Page&lt;/a&gt;) 快速按組收納分頁到列表。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Tabliss&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/onetab/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://tabliss.io/"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/joelshepherd/tabliss/"&gt;GitHub&lt;/a&gt;) 好看、可客製化的新分頁。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Ad Blocker &amp; Privacy - 擋廣告和隱私保護&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;HTTPS Everywhere&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://addons.mozilla.org/en-US/android/addon/https-everywhere/"&gt;Android Add-on&lt;/a&gt;) (&lt;a href="https://www.eff.org/https-everywhere"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/EFForg/https-everywhere"&gt;GitHub&lt;/a&gt;) 電子前哨基金會出品，優先使用更安全的 HTTPS 協定代替不安全的 HTTP 瀏覽網頁。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;, &lt;code&gt;# EFF&lt;/code&gt;, &lt;code&gt;# Tor Included&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Privacy Badger&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://addons.mozilla.org/en-US/android/addon/privacy-badger17/"&gt;Android Add-on&lt;/a&gt;) (&lt;a href="https://privacybadger.org/"&gt;Home Page&lt;/a&gt;) 電子前哨基金會出品，阻擋追蹤器。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;, &lt;code&gt;# EFF&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;uBlock Origin&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://addons.mozilla.org/en-US/android/addon/ublock-origin/"&gt;Android Add-on&lt;/a&gt;) (&lt;a href="https://zh.wikipedia.org/zh-tw/UBlock_Origin"&gt;Wikipedia&lt;/a&gt;) (&lt;a href="https://github.com/gorhill/uBlock"&gt;GitHub&lt;/a&gt;) 擋廣告。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Google Enhancement - Google 增強&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;uBlacklist&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/ublacklist/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://iorate.github.io/ublacklist/"&gt;Home Page&lt;/a&gt;) 封鎖指定搜尋結果。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;To Google Translate&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/to-google-translate/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/itsecurityco/to-google-translate"&gt;GitHub&lt;/a&gt;) 快速使用 Google 翻譯。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Google search link fix&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/palant/searchlinkfix"&gt;GitHub&lt;/a&gt;) 取消 Google 搜尋結果的重新导向。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;YouTube Video and Audio Downloader&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/youtube_downloader_webx/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://technologyto.com/extractor.html"&gt;Home Page&lt;/a&gt;) 下載 YouTube 的影片。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;YouTube Popout Player&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/youtube-popout-player/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://rthaut.github.io/YouTubePopoutPlayer/"&gt;Home Page&lt;/a&gt;) 用沒有工具列的簡潔的彈出式視窗打開 YouTube 影片。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Content Farm Terminator&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/content-farm-terminator/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/danny0838/content-farm-terminator"&gt;GitHub&lt;/a&gt;) 標示並封鎖內容農場。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;UserScript &amp; UserStyle - 油猴腳本和客製外觀&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Greasemonkey&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://www.greasespot.net/"&gt;Home Page&lt;/a&gt;) UserScript 油猴腳本。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Tampermonkey&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://www.tampermonkey.net/"&gt;GitHub&lt;/a&gt;) UserScript 油猴腳本。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Stylus&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/styl-us/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://add0n.com/stylus.html"&gt;GitHub&lt;/a&gt;) UserStyle 客製外觀。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Theme &amp; Style - 主題和外觀&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Dark Reader&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/darkreader/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://addons.mozilla.org/en-US/android/addon/darkreader/"&gt;Android Add-on&lt;/a&gt;) (&lt;a href="https://darkreader.org/"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/darkreader/darkreader"&gt;GitHub&lt;/a&gt;) 為每個網頁開啟夜間＼黑暗模式。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Web Service - 服務&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Steam Database&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/steam-database/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://steamdb.info/extension/"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/SteamDatabase/BrowserExtension"&gt;GitHub&lt;/a&gt;) Steam 歷史價格個其他資訊。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Pushbullet&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/pushbullet/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://www.pushbullet.com/apps"&gt;Home Page&lt;/a&gt;) 傳送分頁、訊息、或任何東西到手機或是其他設備。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Privacy Pass&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/privacy-pass/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://privacypass.github.io/"&gt;Home Page&lt;/a&gt;) 快速通過 Cloudflare 和 hCaptcha 的人機驗證。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Octotree&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/octotree/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://www.octotree.io/"&gt;Home Page&lt;/a&gt;) 以樹的方式展示 GitHub 的 Repo 的檔案。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Copy and Paste - 拷貝和粘貼&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Copy URL To Clipboard&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/url2clipboard/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/asamuzaK/url2clipboard"&gt;GitHub&lt;/a&gt;) 以各種格式拷貝鏈接。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Copy as Markdown&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/copy-as-markdown/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/yorkxin/copy-as-markdown"&gt;GitHub&lt;/a&gt;) 以 Markdown 格式拷貝鏈接、分頁、圖片。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Copy PlainText&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/copy-plaintext/"&gt;Add-on&lt;/a&gt;) 以無格式拷貝文字。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Absolute Enable Right Click &amp; Copy&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/absolute-enable-right-click/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://greasyfork.org/en/scripts/23772-absolute-enable-right-click-copy"&gt;GreasyFork&lt;/a&gt;) 強制啟用滑鼠右鍵選單和拷貝功能。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Browser Configuration - 瀏覽器設定&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Bookmark Dupes&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/bookmark-dupes/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/vaeth/bookmarkdupes/"&gt;GitHub&lt;/a&gt;) 尋找和清理重複書籤。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Cookie Quick Manager&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/cookie-quick-manager/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/ysard/cookie-quick-manager"&gt;GitHub&lt;/a&gt;) 編輯 Cookies。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;FoxyProxy Standard&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://getfoxyproxy.org/"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/foxyproxy/firefox-extension"&gt;GitHub&lt;/a&gt;) 功能強大的代理設定。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Quick Accept-Language Switcher&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/quick-accept-language-switc/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/callahad/quick-accept-language-switcher"&gt;GitHub&lt;/a&gt;) 快速切換網頁請求中 Accept-Language。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;User-Agent Switcher&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher-revived/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://mybrowseraddon.com/useragent-switcher.html"&gt;Home Page&lt;/a&gt;) 快速切換網頁請求中 User-Agent。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Utilities - 實用工具&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Markdown Here&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/markdown-here/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://markdown-here.com/"&gt;Home Page&lt;/a&gt;) (&lt;a href="https://github.com/adam-p/markdown-here"&gt;GitHub&lt;/a&gt;) 用 Markdown 編寫郵件。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Feedbro&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://nodetics.com/feedbro/"&gt;Home Page&lt;/a&gt;) RSS 聚合、閱讀器。 [&lt;code&gt;# AMO Recommended&lt;/code&gt;] &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;strong&gt;Aria2 Download Manager Integration&lt;/strong&gt;: (&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/aria2-integration/"&gt;Add-on&lt;/a&gt;) (&lt;a href="https://github.com/RossWang/Aria2-Integration"&gt;GitHub&lt;/a&gt;) 用 Aria2 下載檔案。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!--
-Flags filter: ['Abandon', 'Pro', 'Old', 'Discontinued', 'Disable']
-Count: {filter: 6, folders: 11, elements: 40}
---&gt;
-
-&lt;h2&gt;如何尋找實用優秀的擴充套件&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;看緣分（這是真...&lt;/li&gt;
-&lt;li&gt;擴充套件的來源單一、通常都來自瀏覽器所經營的擴充套件商店。
-  擴充套件的安全性也通常有他們的把關，擴充套件商店也會精選出一些口碑良好的擴充套件。&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://addons.mozilla.org/en-US/firefox/"&gt;Add-ons for Firefox&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://chrome.google.com/webstore/category/extensions"&gt;Chrome Web Store - Extensions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home"&gt;Microsoft Edge Add-ons&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;推介軟體的部落格＼網站也會推介擴充套件；&lt;/li&gt;
-&lt;li&gt;尋找現有擴充套件的替代品：&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://alternativeto.net/"&gt;AlternativeTo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;Release Notes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;0.7.0 (2021-03-04)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Add-ons"></category><category term="Extensions"></category><category term="Apps"></category><category term="Awesome List"></category></entry><entry><title>推薦的 Windows 應用軟體列表</title><link href="https://undecv.github.io/posts/WinSoft.html" rel="alternate"></link><published>2021-01-06T00:00:00+08:00</published><updated>2021-01-06T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2021-01-06:/posts/WinSoft.html</id><summary type="html">&lt;p&gt;Awesome List of Windows Application Software&lt;br /&gt;&lt;del&gt;裝機必備的實用軟體大合集！&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;推薦一些 Windows 平台下的軟體， 適合日常以及非日常使用。&lt;br /&gt;
+&lt;/blockquote&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="WSL"></category><category term="Linux"></category><category term="Task Spooler"></category><category term="Shell Script"></category><category term="File Archive"></category><category term="7-Zip"></category><category term="Queue"></category></entry><entry><title>推薦的 Windows 應用軟體列表</title><link href="https://undecv.github.io/posts/WinSoft.html" rel="alternate"></link><published>2021-01-06T00:00:00+08:00</published><updated>2021-01-06T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2021-01-06:/posts/WinSoft.html</id><summary type="html">&lt;p&gt;List of Windows Application Software&lt;br /&gt;&lt;del&gt;裝機必備的實用軟體大合集！&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;推薦一些 Windows 平台下的軟體， 適合日常以及非日常使用。&lt;br /&gt;
 並不一定每一款軟體你都需要或適合你，也未必是大眾的選擇；&lt;br /&gt;
 &lt;del&gt;但是那些無時無刻不在彈廣告的辣雞軟件一定不會是你的選擇。&lt;/del&gt;&lt;/p&gt;
 &lt;!-- # List of Windows Application Software --&gt;
@@ -498,61 +592,7 @@ Count: {filter: 21, folders: 27, elements: 84}
 &lt;li&gt;1.2.1 (2017-11-30)&lt;/li&gt;
 &lt;li&gt;1.2.0 (2017-08-21)&lt;/li&gt;
 &lt;li&gt;1.1.0 (2017-07-26)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Awesome lists"></category><category term="Windows"></category><category term="Softwares"></category><category term="Apps"></category></entry><entry><title>Raspberry Pi 4B 搭建 NAS 第一話：外接式機械行動硬碟和 USB 篇</title><link href="https://undecv.github.io/posts/rPi4BNASEp1.html" rel="alternate"></link><published>2020-04-03T00:00:00+08:00</published><updated>2020-04-03T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2020-04-03:/posts/rPi4BNASEp1.html</id><summary type="html">&lt;p&gt;Raspberry Pi 4B NAS Episode 1 (HDD &amp;amp; USB)&lt;br /&gt;&lt;del&gt;爬文是不可能爬文的，这辈子不可能爬文的。Spec 又不會查，Run 不起來纔是正常的樣子。&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;del&gt;爬文是不可能爬文的，这辈子不可能爬文的。Spec 又不會查，Run 不起來纔是正常的樣子。&lt;/del&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Copyright © 2020 undecV.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;原本想拿 &lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 做 NAS 的，想當然耳，結果翻車了。&lt;/p&gt;
-&lt;p&gt;通常使用 USB 的設備吃電都是不多的，例如滑鼠、鍵盤、隨身碟等，但是使用機械行動硬碟的時候可能就需要考慮輸出功率的因素了。
-機械硬碟吃功率主要看：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;冷啓動時的峯值功率 (Peak)&lt;/li&gt;
-&lt;li&gt;讀寫運作中的功率（r/w）&lt;/li&gt;
-&lt;li&gt;沒有讀寫的閒置功率（Idle）&lt;/li&gt;
-&lt;li&gt;待機功率（Standby and Sleep）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;現代的機械硬碟長時間沒有讀寫時會（停轉磁碟）待機以節省功率，這時候讀資料需要把磁碟重新轉起來，這也是爲什麼有時候從抓資料的時候硬碟會「當掉幾秒」的原因。&lt;/p&gt;
-&lt;p&gt;根據&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;（WD 紅碟的 Spec）&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt;（Toshiba 行動硬碟的 Spec）&lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="#fn:3"&gt;3&lt;/a&gt;&lt;/sup&gt;：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;壹個典型的 3.5吋 內接式硬碟吃的是 12V 供電，峯值在 1.75A (21W)、讀寫大約 4.8W、閒置 3.1W，待機 0.6W；&lt;/li&gt;
-&lt;li&gt;壹個典型的 2.5吋 內接式硬碟吃的是 5V 供電，峯值在 1A (5W)、讀寫大約 1.4W、閒置 0.6W，待機 0.2W；&lt;/li&gt;
-&lt;li&gt;壹個典型的 2.5吋 行動硬碟，吃的是 USB 供電，最多 0.9A。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;具體請查 Spec，可以看出機械硬碟並不是省電的碟。
-不是給手機充電（使用充電協定）的情況下，通常 USB 標準給外接裝置供電都是 5V，USB 2.0 最大 0.5A、USB 3.0 最大 0.9A &lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="#fn:4"&gt;4&lt;/a&gt;&lt;/sup&gt;，而 USB3.1 的 Type-C 有支援最大 3A。&lt;/p&gt;
-&lt;p&gt;對於真正的 NAS，功率必然是需要考慮的問題，在硬碟、BIOS 和 驅動程式支援的情況下，Staggered Spin-up (SSU) 可以讓硬碟陣列輪流轉以控制使用中的功率 &lt;sup id="fnref:7"&gt;&lt;a class="footnote-ref" href="#fn:7"&gt;7&lt;/a&gt;&lt;/sup&gt;；Power-Up In Standby (PUIS) 讓硬碟冷啟動時直接進入待機狀態而避免過大的峰值功率 &lt;sup id="fnref:8"&gt;&lt;a class="footnote-ref" href="#fn:8"&gt;8&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
-&lt;p&gt;而像 &lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 這種本身功率就不高，只有 USB-C 3A@5V 輸入，但卻有 2x2.0 2x3.0，若按照標準算全滿則是 2.8A，那板板本身就只能用愛發電了。所以就有了最大輸出的概念，&lt;del&gt;就像跟玩文字遊戲的手機充電器一樣，~&lt;/del&gt;&lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 的 USB 電流最大總和只有 1.2A &lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="#fn:5"&gt;5&lt;/a&gt;&lt;/sup&gt;。也就是說，插好插滿最多只能輸出 6W，超出限制的時候 &lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 會保護性關機。&lt;/p&gt;
-&lt;p&gt;所以 &lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 本身是只能插一個行動硬碟的。我直接插上了兩個硬碟之後 &lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 自動重開了，然後聽到硬碟在唱跳 Rap，思考了一下人生之後趕緊給關了機。&lt;/p&gt;
-&lt;p&gt;那麼怎麼實現 &lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 做 NAS 呢，可以使用帶外接電源的 USB HUB &lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="#fn:6"&gt;6&lt;/a&gt;&lt;/sup&gt;。不帶電源的 HUB 當然用電都是從那唯一壹個 USB 接頭輸出，大約在 0.5A 甚至 0.1A，可以帶的裝置也就有限。&lt;sup id="fnref2:4"&gt;&lt;a class="footnote-ref" href="#fn:4"&gt;4&lt;/a&gt;&lt;/sup&gt; 而帶電源的也需要看電源的功率，現在常見一種多一個 USB Micro-B 供電介面的小型 HUB，通常也只能從手機充電器供給 2A@5V (10W) 的功率（請查 Spec），仍然不足每個介面都插上行動硬碟。而一些附電源的 HUB 則需要根據提供的電源功率來試算。&lt;/p&gt;
-&lt;div class="footnote"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="http://products.wdc.com/library/SpecSheet/ENG/2879-800002.pdf"&gt;WD Red NAS Hard Drives (PDF)&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:2"&gt;
-&lt;p&gt;&lt;a href="https://www.toshiba-storage.com/products/toshiba-portable-hard-drives-canvio-basics-2/"&gt;Toshiba Canvio Basics&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:3"&gt;
-&lt;p&gt;Super User: &lt;a href="https://superuser.com/questions/565653/how-much-power-does-a-hard-drive-use"&gt;How much power does a hard drive use?&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:4"&gt;
-&lt;p&gt;Wikipedia: &lt;a href="https://en.wikipedia.org/wiki/USB"&gt;USB&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;a class="footnote-backref" href="#fnref2:4" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:5"&gt;
-&lt;p&gt;Raspberry Pi Documentation: &lt;a href="https://www.raspberrypi.org/documentation/faqs/#pi-power"&gt;FAQs&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:6"&gt;
-&lt;p&gt;Gary Explains @ YouTube: &lt;a href="https://youtu.be/O-FfOWdZAQ4"&gt;Build a Raspberry Pi NAS with 4 Hard Drives and RAID&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:7"&gt;
-&lt;p&gt;Wikipedia: &lt;a href="https://en.wikipedia.org/wiki/Spin-up"&gt;Spin-up&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:8"&gt;
-&lt;p&gt;Wikipedia: &lt;a href="https://en.wikipedia.org/wiki/Power-up_in_standby"&gt;Power-up in standby&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Raspberry Pi"></category><category term="NAS"></category><category term="HDD"></category><category term="USB"></category><category term="USB HUB"></category></entry><entry><title>Raspberry Pi 4B 搭建 NAS 第二話：網路篇</title><link href="https://undecv.github.io/posts/rPi4BNASEp2.html" rel="alternate"></link><published>2020-04-03T00:00:00+08:00</published><updated>2020-04-03T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2020-04-03:/posts/rPi4BNASEp2.html</id><summary type="html">&lt;p&gt;Raspberry Pi 4B NAS Episode 2 (Network)&lt;br /&gt;&lt;del&gt;究竟讀寫速度會卡在 USB 還是 SMB 呢？&lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; NAS 翻車最終話！\滑稽。&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;del&gt;究竟讀寫速度會卡在 USB 還是 SMB 呢？&lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; NAS 翻車最終話！\滑稽。&lt;/del&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Awesome lists"></category><category term="Windows"></category><category term="Softwares"></category><category term="Apps"></category></entry><entry><title>Raspberry Pi 4B 搭建 NAS 第二話：網路篇</title><link href="https://undecv.github.io/posts/rPi4BNASEp2.html" rel="alternate"></link><published>2020-04-03T01:00:00+08:00</published><updated>2020-04-03T01:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2020-04-03:/posts/rPi4BNASEp2.html</id><summary type="html">&lt;p&gt;Raspberry Pi 4B NAS Episode 2 (Network)&lt;br /&gt;&lt;del&gt;究竟讀寫速度會卡在 USB 還是 SMB 呢？&lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; NAS 翻車最終話！\滑稽。&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;del&gt;究竟讀寫速度會卡在 USB 還是 SMB 呢？&lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; NAS 翻車最終話！\滑稽。&lt;/del&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Copyright © 2020 undecV.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -609,7 +649,61 @@ Count: {filter: 21, folders: 27, elements: 84}
 &lt;p&gt;Raspberry Pi Forums: &lt;a href="https://www.raspberrypi.org/forums/viewtopic.php?p=1501426"&gt;STICKY: If you have a Raspberry Pi 4 and are getting bad speeds transferring data to/from USB3.0 SSDs, read this&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Raspberry Pi"></category><category term="NAS"></category><category term="HDD"></category><category term="Ethernet"></category><category term="Wi-Fi"></category></entry><entry><title>BitTorrent 種子下載從入門到出門</title><link href="https://undecv.github.io/posts/BitTorrentIntro.html" rel="alternate"></link><published>2019-12-11T00:00:00+08:00</published><updated>2019-12-11T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2019-12-11:/posts/BitTorrentIntro.html</id><summary type="html">&lt;p&gt;BitTorrent Introduction&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
+&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Raspberry Pi"></category><category term="NAS"></category><category term="HDD"></category><category term="Ethernet"></category><category term="Wi-Fi"></category></entry><entry><title>Raspberry Pi 4B 搭建 NAS 第一話：外接式機械行動硬碟和 USB 篇</title><link href="https://undecv.github.io/posts/rPi4BNASEp1.html" rel="alternate"></link><published>2020-04-03T00:00:00+08:00</published><updated>2020-04-03T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2020-04-03:/posts/rPi4BNASEp1.html</id><summary type="html">&lt;p&gt;Raspberry Pi 4B NAS Episode 1 (HDD &amp;amp; USB)&lt;br /&gt;&lt;del&gt;爬文是不可能爬文的，这辈子不可能爬文的。Spec 又不會查，Run 不起來纔是正常的樣子。&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;del&gt;爬文是不可能爬文的，这辈子不可能爬文的。Spec 又不會查，Run 不起來纔是正常的樣子。&lt;/del&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Copyright © 2020 undecV.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;原本想拿 &lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 做 NAS 的，想當然耳，結果翻車了。&lt;/p&gt;
+&lt;p&gt;通常使用 USB 的設備吃電都是不多的，例如滑鼠、鍵盤、隨身碟等，但是使用機械行動硬碟的時候可能就需要考慮輸出功率的因素了。
+機械硬碟吃功率主要看：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;冷啓動時的峯值功率 (Peak)&lt;/li&gt;
+&lt;li&gt;讀寫運作中的功率（r/w）&lt;/li&gt;
+&lt;li&gt;沒有讀寫的閒置功率（Idle）&lt;/li&gt;
+&lt;li&gt;待機功率（Standby and Sleep）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;現代的機械硬碟長時間沒有讀寫時會（停轉磁碟）待機以節省功率，這時候讀資料需要把磁碟重新轉起來，這也是爲什麼有時候從抓資料的時候硬碟會「當掉幾秒」的原因。&lt;/p&gt;
+&lt;p&gt;根據&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;（WD 紅碟的 Spec）&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt;（Toshiba 行動硬碟的 Spec）&lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="#fn:3"&gt;3&lt;/a&gt;&lt;/sup&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;壹個典型的 3.5吋 內接式硬碟吃的是 12V 供電，峯值在 1.75A (21W)、讀寫大約 4.8W、閒置 3.1W，待機 0.6W；&lt;/li&gt;
+&lt;li&gt;壹個典型的 2.5吋 內接式硬碟吃的是 5V 供電，峯值在 1A (5W)、讀寫大約 1.4W、閒置 0.6W，待機 0.2W；&lt;/li&gt;
+&lt;li&gt;壹個典型的 2.5吋 行動硬碟，吃的是 USB 供電，最多 0.9A。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;具體請查 Spec，可以看出機械硬碟並不是省電的碟。
+不是給手機充電（使用充電協定）的情況下，通常 USB 標準給外接裝置供電都是 5V，USB 2.0 最大 0.5A、USB 3.0 最大 0.9A &lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="#fn:4"&gt;4&lt;/a&gt;&lt;/sup&gt;，而 USB3.1 的 Type-C 有支援最大 3A。&lt;/p&gt;
+&lt;p&gt;對於真正的 NAS，功率必然是需要考慮的問題，在硬碟、BIOS 和 驅動程式支援的情況下，Staggered Spin-up (SSU) 可以讓硬碟陣列輪流轉以控制使用中的功率 &lt;sup id="fnref:7"&gt;&lt;a class="footnote-ref" href="#fn:7"&gt;7&lt;/a&gt;&lt;/sup&gt;；Power-Up In Standby (PUIS) 讓硬碟冷啟動時直接進入待機狀態而避免過大的峰值功率 &lt;sup id="fnref:8"&gt;&lt;a class="footnote-ref" href="#fn:8"&gt;8&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;p&gt;而像 &lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 這種本身功率就不高，只有 USB-C 3A@5V 輸入，但卻有 2x2.0 2x3.0，若按照標準算全滿則是 2.8A，那板板本身就只能用愛發電了。所以就有了最大輸出的概念，&lt;del&gt;就像跟玩文字遊戲的手機充電器一樣，~&lt;/del&gt;&lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 的 USB 電流最大總和只有 1.2A &lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="#fn:5"&gt;5&lt;/a&gt;&lt;/sup&gt;。也就是說，插好插滿最多只能輸出 6W，超出限制的時候 &lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 會保護性關機。&lt;/p&gt;
+&lt;p&gt;所以 &lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 本身是只能插一個行動硬碟的。我直接插上了兩個硬碟之後 &lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 自動重開了，然後聽到硬碟在唱跳 Rap，思考了一下人生之後趕緊給關了機。&lt;/p&gt;
+&lt;p&gt;那麼怎麼實現 &lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; 做 NAS 呢，可以使用帶外接電源的 USB HUB &lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="#fn:6"&gt;6&lt;/a&gt;&lt;/sup&gt;。不帶電源的 HUB 當然用電都是從那唯一壹個 USB 接頭輸出，大約在 0.5A 甚至 0.1A，可以帶的裝置也就有限。&lt;sup id="fnref2:4"&gt;&lt;a class="footnote-ref" href="#fn:4"&gt;4&lt;/a&gt;&lt;/sup&gt; 而帶電源的也需要看電源的功率，現在常見一種多一個 USB Micro-B 供電介面的小型 HUB，通常也只能從手機充電器供給 2A@5V (10W) 的功率（請查 Spec），仍然不足每個介面都插上行動硬碟。而一些附電源的 HUB 則需要根據提供的電源功率來試算。&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="http://products.wdc.com/library/SpecSheet/ENG/2879-800002.pdf"&gt;WD Red NAS Hard Drives (PDF)&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;&lt;a href="https://www.toshiba-storage.com/products/toshiba-portable-hard-drives-canvio-basics-2/"&gt;Toshiba Canvio Basics&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:3"&gt;
+&lt;p&gt;Super User: &lt;a href="https://superuser.com/questions/565653/how-much-power-does-a-hard-drive-use"&gt;How much power does a hard drive use?&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:4"&gt;
+&lt;p&gt;Wikipedia: &lt;a href="https://en.wikipedia.org/wiki/USB"&gt;USB&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;a class="footnote-backref" href="#fnref2:4" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:5"&gt;
+&lt;p&gt;Raspberry Pi Documentation: &lt;a href="https://www.raspberrypi.org/documentation/faqs/#pi-power"&gt;FAQs&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:6"&gt;
+&lt;p&gt;Gary Explains @ YouTube: &lt;a href="https://youtu.be/O-FfOWdZAQ4"&gt;Build a Raspberry Pi NAS with 4 Hard Drives and RAID&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:7"&gt;
+&lt;p&gt;Wikipedia: &lt;a href="https://en.wikipedia.org/wiki/Spin-up"&gt;Spin-up&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:8"&gt;
+&lt;p&gt;Wikipedia: &lt;a href="https://en.wikipedia.org/wiki/Power-up_in_standby"&gt;Power-up in standby&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Raspberry Pi"></category><category term="NAS"></category><category term="HDD"></category><category term="USB"></category><category term="USB HUB"></category></entry><entry><title>BitTorrent 從入門到出門</title><link href="https://undecv.github.io/posts/BitTorrentIntro.html" rel="alternate"></link><published>2019-12-11T00:00:00+08:00</published><updated>2019-12-11T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2019-12-11:/posts/BitTorrentIntro.html</id><summary type="html">&lt;p&gt;BitTorrent Introduction&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
 &lt;p&gt;2019-12-11&lt;/p&gt;
 &lt;p&gt;Copyright © 2017 undecV.&lt;br /&gt;
 &lt;a href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;br /&gt;
