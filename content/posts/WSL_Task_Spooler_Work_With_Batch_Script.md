@@ -11,7 +11,7 @@ Summary: WSL Task Spooler Work With Batch Script
 
 <!-- # WSL Task Spooler Work With Batch Script -->
 
-> Copyright © undecV 2021 All rights reserved.
+> Copyright © undecV All rights reserved.
 
 有時候需要執行一些時間長、需要大量系統資源的指令，例如巨量資料的計算、機器學習，或是更常用的檔案壓縮、影片轉檔。希望這些高負載的指令可以被順序執行而不是同時執行，同時執行會佔用過多的系統資源，不僅互相拖慢速度，也影響到其他程式的流暢執行，大幅降低了摸魚體驗。
 
@@ -70,7 +70,7 @@ M$ 秉承著打不贏就加入他們的精神，
 聯合一眾 Friends 做出了曠古未聞空前絕後驚世駭俗的 Windows Subsystem for Linux (WSL)，
 WSL 可以讓 Windows 執行 Linux 的程式，並且可以串接 Windows 的指令。
 
-1. 搜尋 "Turn Windows features on or off"，開啟 "Windows Subsystem for Linux"，在安裝完成後會需要重新開機。
+1. 在開始功能表中搜尋 "Turn Windows features on or off"，開啟 "Windows Subsystem for Linux"，在安裝完成後會需要重新開機。
 2. 在 "Microsoft Store" 中，搜尋 "WSL" 即可找到諸如 Debian、Ubuntu、SUSE、Kali 各發行版，如果你是 Linux 新手，可以試試好上手的 [Ubuntu][WSL_Ubuntu_Store]，後面也會拿這個舉例。
 3. 開始選單會出現安裝後的 Ubuntu，初次使用會需要設定 UNIX 使用者名稱和密碼。這些都不會影響到原本的作業系統，忘記密碼也可以透過特殊手段重設。當你看到 `使用者名稱@電腦名:~$` 的時候，到此你的 WSL 的設定就完成了。
 

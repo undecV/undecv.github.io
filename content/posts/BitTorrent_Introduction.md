@@ -1,5 +1,5 @@
 ---
-Title: BitTorrent 種子下載從入門到出門
+Title: BitTorrent 從入門到出門
 Date: 2019-12-11
 Modified: 2019-12-11
 Category: Category

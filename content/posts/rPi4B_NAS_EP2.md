@@ -1,7 +1,7 @@
 ---
 Title: Raspberry Pi 4B 搭建 NAS 第二話：網路篇
-Date: 2020-04-03
-Modified: 2020-04-03
+Date: 2020-04-03 01:00
+Modified: 2020-04-03 01:00
 Category: Category
 Tags: [zh_TW, Raspberry Pi, NAS, HDD, Ethernet, Wi-Fi]
 Slug: rPi4BNASEp2
