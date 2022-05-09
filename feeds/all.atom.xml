@@ -1,5 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>キャンディージャー</title><link href="https://undecv.github.io/" rel="alternate"></link><link href="https://undecv.github.io/feeds/all.atom.xml" rel="self"></link><id>https://undecv.github.io/</id><updated>2021-05-10T00:00:00+08:00</updated><subtitle>undecV's Blog "Candy Jar"</subtitle><entry><title>推薦的瀏覽器擴充套件列表</title><link href="https://undecv.github.io/posts/AddonExt.html" rel="alternate"></link><published>2021-05-10T00:00:00+08:00</published><updated>2021-05-10T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2021-05-10:/posts/AddonExt.html</id><summary type="html">&lt;p&gt;Awesome List of Brower Add-ons / Extensions&lt;/p&gt;</summary><content type="html">&lt;!-- # Awesome List of Brower Add-ons / Extensions --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>キャンディージャー</title><link href="/" rel="alternate"></link><link href="feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2022-05-10T00:30:00+08:00</updated><subtitle>undecV's Blog "Candy Jar"</subtitle><entry><title>YouTubeあるある - 我不想再看短影片</title><link href="posts/YouTubeNoShorts.html" rel="alternate"></link><published>2022-05-10T00:30:00+08:00</published><updated>2022-05-10T00:30:00+08:00</updated><author><name>undecV</name></author><id>tag:None,2022-05-10:posts/YouTubeNoShorts.html</id><summary type="html">&lt;p&gt;&lt;del&gt;抖〇一響，父母白養&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;!-- # No More YouTube Shorts --&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;del&gt;抖〇一響，父母白養&lt;/del&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;短影片像是癌症擴散一般風靡了各大影音平臺，
+但是短影片極度簡化的播放器功能缺失甚至沒有調整進度的功能，
+好在通過轉換網址，YouTube 一般播放器也可以播放短影片的。&lt;/p&gt;
+&lt;p&gt;短影片播放器的網址：&lt;code&gt;https://www.youtube.com/shorts/&amp;lt;VIDEO_ID&amp;gt;&lt;/code&gt;&lt;/br&gt;
+一般的播放器的網址：&lt;code&gt;https://www.youtube.com/watch?v=&amp;lt;VIDEO_ID&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;通過 REDIRECTOR 免費、開源擴充套件（&lt;a href="https://addons.mozilla.org/firefox/addon/redirector/"&gt;Firefox Add-on&lt;/a&gt;, &lt;a href="https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd"&gt;Chrome Extension&lt;/a&gt;），
+可以自動把短影片的地址轉換到一般的播放器。&lt;/p&gt;
+&lt;p&gt;把下面這段資料存成文字檔，在 REDIRECTOR 擴充套件中導入（Import），啟用之後便會自動把短影片轉址到一般的播放器。&lt;/p&gt;
+&lt;p&gt;最後，好孩子不要去找範例網址XD&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;createdBy&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Redirector v3.5.3&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;createdAt&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;2022-05-09T15:03:30.599Z&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;redirects&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;No More YouTube Shorts&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;exampleUrl&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://www.youtube.com/shorts/z4Wl0asydDA&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;exampleResult&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://www.youtube.com/watch?v=z4Wl0asydDA&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;error&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;includePattern&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://www.youtube.com/shorts/*&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;excludePattern&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;patternDesc&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;redirectUrl&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://www.youtube.com/watch?v=$1&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;patternType&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;W&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;processMatches&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;noProcessing&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;disabled&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;grouped&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;appliesTo&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;main_frame&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;sub_frame&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;script&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;image&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;imageset&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;object&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;xmlhttprequest&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;history&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;other&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Firefox"></category><category term="Chrome"></category><category term="Add-ons"></category><category term="Extensions"></category><category term="YouTube"></category></entry><entry><title>YouTubeあるある - 戲院級的觀影體驗！擴充套件 Enhancer for YouTube™</title><link href="posts/YouTubeEnhancerForYouTube.html" rel="alternate"></link><published>2022-05-10T00:20:00+08:00</published><updated>2022-05-10T00:20:00+08:00</updated><author><name>undecV</name></author><id>tag:None,2022-05-10:posts/YouTubeEnhancerForYouTube.html</id><summary type="html">&lt;p&gt;&lt;del&gt;巨幅銀幕、人體工學&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;del&gt;巨幅銀幕、人體工學&lt;/del&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Enhancer for YouTube™ 是一個免費、專有擴充套件（&lt;a href="https://addons.mozilla.org/firefox/addon/enhancer-for-youtube/"&gt;Firefox Add-on&lt;/a&gt;, &lt;a href="https://chrome.google.com/webstore/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle"&gt;Chrome Extension&lt;/a&gt;），它為 YouTube 播放器添加了超多實用的功能，
+功能超多到以至於很難介紹，也很難介紹完，
+是 YouTube 增強系的擴充套件的集大成之作，就像瑞士刀。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;聲音拉到最大都聽不清，就可以開啟&lt;strong&gt;音量增強&lt;/strong&gt;的功能；&lt;/li&gt;
+&lt;li&gt;畫面看不清楚，可以用&lt;strong&gt;影片濾鏡&lt;/strong&gt;調整亮度、對比、飽和度...&lt;/li&gt;
+&lt;li&gt;影片太慢心太急，1.25 太慢、1.5 跟不上，可以精密的到以 0.05 為步進 &lt;strong&gt;調整播放速度&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;畫面太小，全熒幕又不方便，可以&lt;strong&gt;鎖定劇院模式&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;劇院模式畫面留邊還是太小，&lt;strong&gt;放大播放器&lt;/strong&gt;撐滿整個視窗；&lt;/li&gt;
+&lt;li&gt;想要DD多開視窗，或是摸魚想要有影片陪伴，可以把影片放進&lt;strong&gt;彈出視窗&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;遇到喜歡的音樂可以開啟洗腦&lt;strong&gt;循環播放&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;界面看膩了，可以&lt;strong&gt;客製外觀主題&lt;/strong&gt;，就像買了一臺新電視；&lt;/li&gt;
+&lt;li&gt;看影片資訊、聊天留言時候迷你播放器畫面上，視聽不中斷；&lt;/li&gt;
+&lt;li&gt;隱藏卡片、留言區、聊天室、推薦影片，甚至有可以添加排除名單的&lt;strong&gt;擋廣告&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更多的播放控制工具，都可以通過小按鈕快速開關，預設會在播放器下方添加一個工具列，也可以融入播放器的控制列。&lt;/p&gt;
+&lt;p&gt;還有一些沒有介紹到的功能，推薦載來玩玩看。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Before_After" src="images/YouTube_Enhancer_for_YouTube/Before_After.png"&gt;&lt;/p&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Firefox"></category><category term="Chrome"></category><category term="Add-ons"></category><category term="Extensions"></category><category term="YouTube"></category></entry><entry><title>YouTubeあるある - 在電腦上看電視：YouTube on TV 網頁版</title><link href="posts/YouTubeOnTV.html" rel="alternate"></link><published>2022-05-10T00:10:00+08:00</published><updated>2022-05-10T00:10:00+08:00</updated><author><name>undecV</name></author><id>tag:None,2022-05-10:posts/YouTubeOnTV.html</id><summary type="html">&lt;p&gt;&lt;del&gt;誰還有在看電視？&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;del&gt;誰還有在看電視？&lt;/del&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;為什麼要在電腦上看 TV 版呢，
+因為可以讓手機當作遙控器，
+選擇想要看的影片、建立播放列表，
+當然也可以直接在手機上控制播放：
+進度、字幕、音量、速度、畫質，
+手機和電腦甚至不需要在同一個網路，
+讓螢幕變成電視，選一個舒服的姿勢，
+解放滑鼠和鍵盤。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/tv"&gt;YouTube on TV 網頁版&lt;/a&gt; 預設情況下網頁版是不讓進入的，
+需要 YouTube Smart TV 免費、開源的 &lt;a href="https://addons.mozilla.org/firefox/addon/youtube-for-tv/"&gt;Firefox 擴充套件&lt;/a&gt; ，
+或者是 Chrome 類似的擴充套件（未測試，關鍵字搜尋 YouTube TV），
+就可以成功進入 YouTube on TV 網頁版了。&lt;/p&gt;
+&lt;p&gt;接著就是手機和TV版的連結：
+手機的 YouTube 的 App，
+右上角有「Chromecast」圖示，
+點開會有「投放到」選單。
+電腦上進入 YouTube on TV 的設定，
+找到「連結電視和手機」，
+按照上面簡單的步驟進行連結。&lt;/p&gt;
+&lt;p&gt;若在同一個網路下，
+可以使用「透過 Wi-Fi 連結」，
+基本上不需要設定，
+手機上的「投放到」選單中就會出現選項。&lt;/p&gt;
+&lt;p&gt;若在不同的網絡，
+可以使用「透過電視代碼連結」，
+手機的「投放到」選單中
+選擇「透過電視代碼連結」，
+輸入 TV版 的電視代碼，
+通常是12位數字的形式。&lt;/p&gt;
+&lt;p&gt;連結完成後再次點開「Chromecast」圖示，
+會有操控電視版的語音搜尋和遙控器的選項，
+讓手機可以化身成電視版的遙控器。&lt;/p&gt;
+&lt;p&gt;之後就可以在手機中選擇想要看的影片，
+回味看電視的樂趣了。&lt;/p&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Firefox"></category><category term="Add-ons"></category><category term="Extensions"></category><category term="YouTube"></category></entry><entry><title>推薦的瀏覽器擴充套件列表</title><link href="posts/AddonExt.html" rel="alternate"></link><published>2021-05-10T00:00:00+08:00</published><updated>2021-05-10T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:None,2021-05-10:posts/AddonExt.html</id><summary type="html">&lt;p&gt;Awesome List of Brower Add-ons / Extensions&lt;/p&gt;</summary><content type="html">&lt;!-- # Awesome List of Brower Add-ons / Extensions --&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;&lt;del&gt;什麼？您在用 IE？&lt;/del&gt;&lt;/p&gt;
@@ -139,7 +241,7 @@ Count: {filter: 6, folders: 11, elements: 44}
 &lt;ul&gt;
 &lt;li&gt;0.8.0 (2021-05-10): 更新和修正了部分內容。&lt;/li&gt;
 &lt;li&gt;0.7.0 (2021-03-04)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Awesome Lists"></category><category term="Firefox"></category><category term="Add-ons"></category><category term="Extensions"></category></entry><entry><title>Windows 下手動修正 VLC 界面縮放</title><link href="https://undecv.github.io/posts/VLCFractionalScaling.html" rel="alternate"></link><published>2021-05-10T00:00:00+08:00</published><updated>2021-05-10T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2021-05-10:/posts/VLCFractionalScaling.html</id><summary type="html">&lt;p&gt;&lt;del&gt;は？Windows 竟然支援觸控熒幕？&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Fix VLC UI fractional scaling in Windows.&lt;/p&gt;
+&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Awesome Lists"></category><category term="Firefox"></category><category term="Add-ons"></category><category term="Extensions"></category></entry><entry><title>Windows 下手動修正 VLC 界面縮放</title><link href="posts/VLCFractionalScaling.html" rel="alternate"></link><published>2021-05-10T00:00:00+08:00</published><updated>2021-05-10T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:None,2021-05-10:posts/VLCFractionalScaling.html</id><summary type="html">&lt;p&gt;&lt;del&gt;は？Windows 竟然支援觸控熒幕？&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Fix VLC UI fractional scaling in Windows.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;del&gt;は？Windows 竟然支援觸控熒幕？&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;Copyright © undecV.&lt;br /&gt;
@@ -182,13 +284,10 @@ Windows Phone 版的 VLC 看似是一個解決辦法，但是官方說了這不�
 &lt;li&gt;The VideoLAN Forums: &lt;a href="https://forum.videolan.org/viewtopic.php?t=144476"&gt;How to Enable hiDPI Scaling?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;bgstack15.wordpress.com: &lt;a href="https://bgstack15.wordpress.com/2019/04/11/fix-vlc-ui-scaling-problems/"&gt;Fix vlc ui scaling problems&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Unix &amp;amp; Linux Stack Exchange: &lt;a href="https://unix.stackexchange.com/questions/557181/how-to-increase-dpi-for-vlc-media-player-in-cinnamon-on-uhd-display"&gt;How to increase DPI for VLC media player in Cinnamon on UHD display?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="VLC"></category><category term="Media Player"></category><category term="Windows"></category><category term="High DPI"></category><category term="Touchscreen"></category><category term="Fractional Scaling"></category></entry><entry><title>YouTube 鎖定高畫質</title><link href="https://undecv.github.io/posts/YouTubeHighDefinition.html" rel="alternate"></link><published>2021-05-10T00:00:00+08:00</published><updated>2021-05-10T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2021-05-10:/posts/YouTubeHighDefinition.html</id><summary type="html">&lt;p&gt;&lt;del&gt;你手機可以看 4K？&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;!-- # YouTube 鎖定高畫質 --&gt;
+&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="VLC"></category><category term="Media Player"></category><category term="Windows"></category><category term="High DPI"></category><category term="Touchscreen"></category><category term="Fractional Scaling"></category></entry><entry><title>YouTubeあるある - 鎖定高畫質</title><link href="posts/YouTubeHighDefinition.html" rel="alternate"></link><published>2021-05-10T00:00:00+08:00</published><updated>2022-05-10T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:None,2021-05-10:posts/YouTubeHighDefinition.html</id><summary type="html">&lt;p&gt;&lt;del&gt;你手機可以看 4K？&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;!-- # YouTube 鎖定高畫質 --&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;&lt;del&gt;你手機可以看 4K？&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;Copyright © undecV.&lt;br /&gt;
-&lt;a href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;br /&gt;
-This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;最近的 YouTube 出於奇怪的理由，調降了預設的影片畫質 &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;，
 甚至修改了畫質設定 &lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt;，用策略替代原本的解析度選項，
@@ -227,7 +326,7 @@ This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by
 &lt;p&gt;https://addons.mozilla.org/android/addon/youtube-high-definition/&amp;#160;&lt;a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Firefox"></category><category term="Add-ons"></category><category term="Extensions"></category><category term="YouTube"></category><category term="YouTube High Definition"></category></entry><entry><title>把檔案壓縮影片轉檔任務放進佇列！用 WSL Task Spooler 排隊 Windows 的指令</title><link href="https://undecv.github.io/posts/WslTsp.html" rel="alternate"></link><published>2021-04-12T00:00:00+08:00</published><updated>2021-04-12T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2021-04-12:/posts/WslTsp.html</id><summary type="html">&lt;p&gt;WSL Task Spooler Work With Batch Script&lt;/p&gt;</summary><content type="html">&lt;!-- # WSL Task Spooler Work With Batch Script --&gt;
+&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Firefox"></category><category term="Add-ons"></category><category term="Extensions"></category><category term="YouTube"></category></entry><entry><title>把檔案壓縮影片轉檔任務放進佇列！用 WSL Task Spooler 排隊 Windows 的指令</title><link href="posts/WslTsp.html" rel="alternate"></link><published>2021-04-12T00:00:00+08:00</published><updated>2021-04-12T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:None,2021-04-12:posts/WslTsp.html</id><summary type="html">&lt;p&gt;WSL Task Spooler Work With Batch Script&lt;/p&gt;</summary><content type="html">&lt;!-- # WSL Task Spooler Work With Batch Script --&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Copyright © undecV All rights reserved.&lt;/p&gt;
@@ -257,7 +356,7 @@ This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by
 &lt;/ol&gt;
 &lt;h2&gt;7-Zip 指令與批次檔&lt;/h2&gt;
 &lt;p&gt;Windows 版本的 7-Zip 原生支援指令行模式，&lt;a href="https://sevenzip.osdn.jp/chm/cmdline/index.htm"&gt;User's Guide&lt;/a&gt; 說明了詳細的用法。例如下面的指令將 &lt;code&gt;D:\src&lt;/code&gt; 以 7z 的格式壓縮到 &lt;code&gt;D:\dst.7z&lt;/code&gt;：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;7z a -t7z &amp;quot;D:\dst.7z&amp;quot; &amp;quot;D:\src&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mf"&gt;7&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;t7z&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;D:\dst.7z&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;D:\src&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;一個小小的訣竅可以節省壓縮檔案的步驟，創立一個 Batch 批次檔手稿程式，新增一個 txt 文字檔，並將副檔名改成 &lt;code&gt;.bat&lt;/code&gt; 即可，例如 &lt;code&gt;zipit.bat&lt;/code&gt;，編輯內容並存檔：&lt;/p&gt;
@@ -330,7 +429,7 @@ tsp -C          &lt;span class="c1"&gt;# 大寫 C，清除已經完成的任務&
 &lt;p&gt;在監視 Task Spooler 的任務列表的終端機中，就會出現當前任務的狀態。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;TL;DR：參數 &lt;code&gt;-f&lt;/code&gt; 會阻止客戶端把指令 Fork 到背景等待執行。在我的測試中，若不加這個參數會導致加入佇列後直接執行的任務卡住，導致任務無法完成，也就沒辦法繼續執行後面的任務。&lt;/p&gt;
-&lt;/blockquote&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="WSL"></category><category term="Linux"></category><category term="Task Spooler"></category><category term="Shell Script"></category><category term="File Archive"></category><category term="7-Zip"></category><category term="Queue"></category></entry><entry><title>推薦的 Windows 應用軟體列表</title><link href="https://undecv.github.io/posts/WinSoft.html" rel="alternate"></link><published>2021-01-06T00:00:00+08:00</published><updated>2021-01-06T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2021-01-06:/posts/WinSoft.html</id><summary type="html">&lt;p&gt;List of Windows Application Software&lt;br /&gt;&lt;del&gt;裝機必備的實用軟體大合集！&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;推薦一些 Windows 平台下的軟體， 適合日常以及非日常使用。&lt;br /&gt;
+&lt;/blockquote&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="WSL"></category><category term="Linux"></category><category term="Task Spooler"></category><category term="Shell Script"></category><category term="File Archive"></category><category term="7-Zip"></category><category term="Queue"></category></entry><entry><title>推薦的 Windows 應用軟體列表</title><link href="posts/WinSoft.html" rel="alternate"></link><published>2021-01-06T00:00:00+08:00</published><updated>2021-01-06T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:None,2021-01-06:posts/WinSoft.html</id><summary type="html">&lt;p&gt;List of Windows Application Software&lt;br /&gt;&lt;del&gt;裝機必備的實用軟體大合集！&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;推薦一些 Windows 平台下的軟體， 適合日常以及非日常使用。&lt;br /&gt;
 並不一定每一款軟體你都需要或適合你，也未必是大眾的選擇；&lt;br /&gt;
 &lt;del&gt;但是那些無時無刻不在彈廣告的辣雞軟件一定不會是你的選擇。&lt;/del&gt;&lt;/p&gt;
 &lt;!-- # List of Windows Application Software --&gt;
@@ -591,7 +690,7 @@ Count: {filter: 21, folders: 27, elements: 84}
 &lt;li&gt;1.2.1 (2017-11-30)&lt;/li&gt;
 &lt;li&gt;1.2.0 (2017-08-21)&lt;/li&gt;
 &lt;li&gt;1.1.0 (2017-07-26)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Awesome lists"></category><category term="Windows"></category><category term="Softwares"></category><category term="Apps"></category></entry><entry><title>Raspberry Pi 4B 搭建 NAS 第二話：網路篇</title><link href="https://undecv.github.io/posts/rPi4BNASEp2.html" rel="alternate"></link><published>2020-04-03T01:00:00+08:00</published><updated>2020-04-03T01:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2020-04-03:/posts/rPi4BNASEp2.html</id><summary type="html">&lt;p&gt;Raspberry Pi 4B NAS Episode 2 (Network)&lt;br /&gt;&lt;del&gt;究竟讀寫速度會卡在 USB 還是 SMB 呢？&lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; NAS 翻車最終話！\滑稽。&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;del&gt;究竟讀寫速度會卡在 USB 還是 SMB 呢？&lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; NAS 翻車最終話！\滑稽。&lt;/del&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Awesome lists"></category><category term="Windows"></category><category term="Softwares"></category><category term="Apps"></category></entry><entry><title>Raspberry Pi 4B 搭建 NAS 第二話：網路篇</title><link href="posts/rPi4BNASEp2.html" rel="alternate"></link><published>2020-04-03T01:00:00+08:00</published><updated>2020-04-03T01:00:00+08:00</updated><author><name>undecV</name></author><id>tag:None,2020-04-03:posts/rPi4BNASEp2.html</id><summary type="html">&lt;p&gt;Raspberry Pi 4B NAS Episode 2 (Network)&lt;br /&gt;&lt;del&gt;究竟讀寫速度會卡在 USB 還是 SMB 呢？&lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; NAS 翻車最終話！\滑稽。&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;del&gt;究竟讀寫速度會卡在 USB 還是 SMB 呢？&lt;abbr title="Raspberry Pi 4B"&gt;rPi4B&lt;/abbr&gt; NAS 翻車最終話！\滑稽。&lt;/del&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Copyright © 2020 undecV.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -648,7 +747,7 @@ Count: {filter: 21, folders: 27, elements: 84}
 &lt;p&gt;Raspberry Pi Forums: &lt;a href="https://www.raspberrypi.org/forums/viewtopic.php?p=1501426"&gt;STICKY: If you have a Raspberry Pi 4 and are getting bad speeds transferring data to/from USB3.0 SSDs, read this&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Raspberry Pi"></category><category term="NAS"></category><category term="HDD"></category><category term="Ethernet"></category><category term="Wi-Fi"></category></entry><entry><title>Raspberry Pi 4B 搭建 NAS 第一話：外接式機械行動硬碟和 USB 篇</title><link href="https://undecv.github.io/posts/rPi4BNASEp1.html" rel="alternate"></link><published>2020-04-03T00:00:00+08:00</published><updated>2020-04-03T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2020-04-03:/posts/rPi4BNASEp1.html</id><summary type="html">&lt;p&gt;Raspberry Pi 4B NAS Episode 1 (HDD &amp;amp; USB)&lt;br /&gt;&lt;del&gt;爬文是不可能爬文的，这辈子不可能爬文的。Spec 又不會查，Run 不起來纔是正常的樣子。&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;del&gt;爬文是不可能爬文的，这辈子不可能爬文的。Spec 又不會查，Run 不起來纔是正常的樣子。&lt;/del&gt;&lt;/p&gt;
+&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Raspberry Pi"></category><category term="NAS"></category><category term="HDD"></category><category term="Ethernet"></category><category term="Wi-Fi"></category></entry><entry><title>Raspberry Pi 4B 搭建 NAS 第一話：外接式機械行動硬碟和 USB 篇</title><link href="posts/rPi4BNASEp1.html" rel="alternate"></link><published>2020-04-03T00:00:00+08:00</published><updated>2020-04-03T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:None,2020-04-03:posts/rPi4BNASEp1.html</id><summary type="html">&lt;p&gt;Raspberry Pi 4B NAS Episode 1 (HDD &amp;amp; USB)&lt;br /&gt;&lt;del&gt;爬文是不可能爬文的，这辈子不可能爬文的。Spec 又不會查，Run 不起來纔是正常的樣子。&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;del&gt;爬文是不可能爬文的，这辈子不可能爬文的。Spec 又不會查，Run 不起來纔是正常的樣子。&lt;/del&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Copyright © 2020 undecV.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -702,7 +801,7 @@ Count: {filter: 21, folders: 27, elements: 84}
 &lt;p&gt;Wikipedia: &lt;a href="https://en.wikipedia.org/wiki/Power-up_in_standby"&gt;Power-up in standby&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Raspberry Pi"></category><category term="NAS"></category><category term="HDD"></category><category term="USB"></category><category term="USB HUB"></category></entry><entry><title>BitTorrent 從入門到出門</title><link href="https://undecv.github.io/posts/BitTorrentIntro.html" rel="alternate"></link><published>2019-12-11T00:00:00+08:00</published><updated>2019-12-11T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2019-12-11:/posts/BitTorrentIntro.html</id><summary type="html">&lt;p&gt;BitTorrent Introduction&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
+&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Raspberry Pi"></category><category term="NAS"></category><category term="HDD"></category><category term="USB"></category><category term="USB HUB"></category></entry><entry><title>BitTorrent 從入門到出門</title><link href="posts/BitTorrentIntro.html" rel="alternate"></link><published>2019-12-11T00:00:00+08:00</published><updated>2019-12-11T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:None,2019-12-11:posts/BitTorrentIntro.html</id><summary type="html">&lt;p&gt;BitTorrent Introduction&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
 &lt;p&gt;2019-12-11&lt;/p&gt;
 &lt;p&gt;Copyright © 2017 undecV.&lt;br /&gt;
 &lt;a href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;br /&gt;
@@ -769,7 +868,7 @@ This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by
 &lt;p&gt;一些自由軟體爲了減輕其分發的成本，會使用 BitTorrent 做爲取得的方式。
 也有一些種子文件的彙集網站。&lt;/p&gt;
 &lt;p&gt;你會取得一個 &lt;code&gt;*.torrent&lt;/code&gt; 的 &lt;strong&gt;種子文件&lt;/strong&gt;，或是在 &lt;code&gt;🧲&lt;/code&gt; 磁鐵圖標 附近找到像這樣的 &lt;strong&gt;磁力鏈接&lt;/strong&gt;：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;magnet:?xt=urn:btih:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;magnet:?xt=urn:btih:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;將他們導入到你選擇的客戶端中就可以開始下載。&lt;/p&gt;
@@ -789,7 +888,7 @@ This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by
 &lt;li&gt;Wikipedia: &lt;a href="https://en.wikipedia.org/wiki/Magnet_URI_scheme"&gt;Magnet URI scheme&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Quora: &lt;a href="https://www.quora.com/How-do-BitTorrent-magnet-links-work/answer/Stanislav-Shalunov"&gt;Stanislav Shalunov's answer to How do BitTorrent magnet links work?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Stack overflow: &lt;a href="https://stackoverflow.com/a/28601408"&gt;What exactly is the info_Hash in a torrent file&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="BitTorrent"></category><category term="Download"></category><category term="File Sharing"></category><category term="Tutorial"></category><category term="Introduction"></category></entry><entry><title>如何在不同環境下設定 Proxy 代理伺服器</title><link href="https://undecv.github.io/posts/ProxySettings.html" rel="alternate"></link><published>2018-05-20T00:00:00+08:00</published><updated>2018-07-09T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2018-05-20:/posts/ProxySettings.html</id><summary type="html">&lt;p&gt;Proxy Settings&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
+&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="BitTorrent"></category><category term="Download"></category><category term="File Sharing"></category><category term="Tutorial"></category><category term="Introduction"></category></entry><entry><title>如何在不同環境下設定 Proxy 代理伺服器</title><link href="posts/ProxySettings.html" rel="alternate"></link><published>2018-05-20T00:00:00+08:00</published><updated>2018-07-09T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:None,2018-05-20:posts/ProxySettings.html</id><summary type="html">&lt;p&gt;Proxy Settings&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
 &lt;p&gt;Ver: 3.0&lt;/p&gt;
 &lt;p&gt;Copyright © 2017 undecV.&lt;br /&gt;
 &lt;a href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;br /&gt;
@@ -842,17 +941,17 @@ This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by
 &lt;li&gt;通常地，打開 &lt;code&gt;Don't use the proxy server for local (internet) address&lt;/code&gt;（不要將代理用於本地地址）選項。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;如果需要設定 &lt;strong&gt;除了 HTTP 之外的協定&lt;/strong&gt;（例如 SOCKS）或 &lt;strong&gt;多種代理協定&lt;/strong&gt;，可以在 Address（地址）處以下列格式填寫， Port（端口）無需填寫：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;http=&amp;lt;ADDRESS&amp;gt;:&amp;lt;PORT&amp;gt;;https=&amp;lt;ADDRESS&amp;gt;:&amp;lt;PORT&amp;gt;;socks=&amp;lt;ADDRESS&amp;gt;:&amp;lt;PORT&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;http=&amp;lt;ADDRESS&amp;gt;:&amp;lt;PORT&amp;gt;;https=&amp;lt;ADDRESS&amp;gt;:&amp;lt;PORT&amp;gt;;socks=&amp;lt;ADDRESS&amp;gt;:&amp;lt;PORT&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;例如：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;http=127.0.0.1:9487;https=127.0.0.1:9487;socks=127.0.0.1:9487&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;http&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nt"&gt;127&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;0&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;0&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;9487&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;https&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nt"&gt;127&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;0&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;0&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;9487&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="nt"&gt;socks&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nt"&gt;127&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;0&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;0&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;9487&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;socks=127.0.0.1:9487&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;socks=127.0.0.1:9487
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img alt="Win10_Proxy" src="https://undecv.github.io/images/Proxy_Settings/Win10_Proxy_E.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Win10_Proxy" src="images/Proxy_Settings/Win10_Proxy_E.png"&gt;&lt;/p&gt;
 &lt;h3&gt;網頁瀏覽器 - Web Browser&lt;/h3&gt;
 &lt;p&gt;瀏覽器的代理設定，使用這個方法將代理只應用於瀏覽器。通常的，在瀏覽器的設定頁面中就可以設定代理。使用瀏覽器内置的代理設定簡單，不必安裝額外的插件或軟體；但是更推薦使用瀏覽器的插件（Add-ons, or Extensions），他們更加便利和功能强大，插件方法的設定見下一節。&lt;/p&gt;
 &lt;p&gt;瀏覽器內置的設定，例如：&lt;/p&gt;
@@ -863,8 +962,8 @@ This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by
 &lt;p&gt;Vivaldi:
 &lt;code&gt;Menu button&lt;/code&gt; → &lt;code&gt;Tools&lt;/code&gt; → &lt;code&gt;Settings&lt;/code&gt; → &lt;code&gt;Network&lt;/code&gt; → &lt;code&gt;Proxies&lt;/code&gt; → &lt;code&gt;Proxy Settings&lt;/code&gt; → (System setting)&lt;/p&gt;
 &lt;p&gt;以 &lt;a href="https://www.mozilla.org/zh-TW/firefox/all/"&gt;Mozilla Firefox&lt;/a&gt; 57+ 為例：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Firefox_Proxy_1" src="https://undecv.github.io/images/Proxy_Settings/Firefox_Proxy_1_E.png"&gt;
-&lt;img alt="Firefox_Proxy_2" src="https://undecv.github.io/images/Proxy_Settings/Firefox_Proxy_2.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Firefox_Proxy_1" src="images/Proxy_Settings/Firefox_Proxy_1_E.png"&gt;
+&lt;img alt="Firefox_Proxy_2" src="images/Proxy_Settings/Firefox_Proxy_2.png"&gt;&lt;/p&gt;
 &lt;p&gt;其他的瀏覽器設定大致相同。&lt;/p&gt;
 &lt;h3&gt;網頁瀏覽器插件 - Web Browser Add-ons / Extensions&lt;/h3&gt;
 &lt;p&gt;插件的下載地址：&lt;/p&gt;
@@ -878,13 +977,13 @@ This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by
 &lt;/ul&gt;
 &lt;p&gt;將插件下載並安裝到瀏覽器后，點擊插件的圖標並進入插件的設定頁面並進行設定，在開關、切換、修改代理設定也只需要通過點擊插件的圖標即可。&lt;/p&gt;
 &lt;p&gt;以 FoxyProxy Standard 為例：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="FoxyProxy_1" src="https://undecv.github.io/images/Proxy_Settings/FoxyProxy_1_E.png"&gt;
-&lt;img alt="FoxyProxy_2" src="https://undecv.github.io/images/Proxy_Settings/FoxyProxy_2.png"&gt;
-&lt;img alt="FoxyProxy_3" src="https://undecv.github.io/images/Proxy_Settings/FoxyProxy_3_E.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="FoxyProxy_1" src="images/Proxy_Settings/FoxyProxy_1_E.png"&gt;
+&lt;img alt="FoxyProxy_2" src="images/Proxy_Settings/FoxyProxy_2.png"&gt;
+&lt;img alt="FoxyProxy_3" src="images/Proxy_Settings/FoxyProxy_3_E.png"&gt;&lt;/p&gt;
 &lt;h3&gt;其他軟體中的設定&lt;/h3&gt;
 &lt;p&gt;通常的，一些需要網絡連線的應用軟體會提供代理伺服器的設定，若無，可以使用系統代理的方法解決。&lt;/p&gt;
 &lt;p&gt;以下載器 &lt;a href="https://www.freedownloadmanager.org"&gt;Free Download Manager&lt;/a&gt; 爲例：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="FDM_1" src="https://undecv.github.io/images/Proxy_Settings/FDM_1_E.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="FDM_1" src="images/Proxy_Settings/FDM_1_E.png"&gt;&lt;/p&gt;
 &lt;p&gt;通常的，代理的設定在軟體設定界面的網路設定分頁／分類中。&lt;/p&gt;
 &lt;hr&gt;
 &lt;ul&gt;
@@ -892,7 +991,7 @@ This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by
 &lt;li&gt;3.0 Release (20180709).&lt;/li&gt;
 &lt;li&gt;2.0 Release (20180520).&lt;/li&gt;
 &lt;li&gt;1.0 Release (20180210).&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Proxy"></category><category term="Tutorial"></category></entry><entry><title>數位影像檔案格式</title><link href="https://undecv.github.io/posts/GraphicsFileFormats.html" rel="alternate"></link><published>2018-02-07T00:00:00+08:00</published><updated>2018-02-07T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2018-02-07:/posts/GraphicsFileFormats.html</id><summary type="html">&lt;p&gt;Comparison of Graphics File Formats&lt;br /&gt;在使用電腦的過程中，常見很多圖像檔案格式，例如：BMP、JPG、GIF、PNG；&lt;br /&gt;大角蜀的你是否在使用電腦繪圖或影像處理的時候不知該使用以上何種格式而困擾？&lt;/p&gt;</summary><content type="html">&lt;p&gt;在使用電腦的過程中，常見很多圖像檔案格式，例如：&lt;code&gt;BMP&lt;/code&gt;、&lt;code&gt;JPG&lt;/code&gt;、&lt;code&gt;GIF&lt;/code&gt;、&lt;code&gt;PNG&lt;/code&gt;；&lt;br /&gt;
+&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Proxy"></category><category term="Tutorial"></category></entry><entry><title>數位影像檔案格式</title><link href="posts/GraphicsFileFormats.html" rel="alternate"></link><published>2018-02-07T00:00:00+08:00</published><updated>2018-02-07T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:None,2018-02-07:posts/GraphicsFileFormats.html</id><summary type="html">&lt;p&gt;Comparison of Graphics File Formats&lt;br /&gt;在使用電腦的過程中，常見很多圖像檔案格式，例如：BMP、JPG、GIF、PNG；&lt;br /&gt;大角蜀的你是否在使用電腦繪圖或影像處理的時候不知該使用以上何種格式而困擾？&lt;/p&gt;</summary><content type="html">&lt;p&gt;在使用電腦的過程中，常見很多圖像檔案格式，例如：&lt;code&gt;BMP&lt;/code&gt;、&lt;code&gt;JPG&lt;/code&gt;、&lt;code&gt;GIF&lt;/code&gt;、&lt;code&gt;PNG&lt;/code&gt;；&lt;br /&gt;
 大角蜀的你是否在使用電腦繪圖或影像處理的時候不知該使用以上何種格式而困擾？&lt;/p&gt;
 &lt;p&gt;以上舉例出的不同格式，他們各自使用不同的技術，有著各自不同的特點，這決定了他們的用途和場合，那麼：&lt;/p&gt;
 &lt;ul&gt;
