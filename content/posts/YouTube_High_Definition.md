@@ -1,9 +1,9 @@
 ---
-Title: YouTube 鎖定高畫質
+Title: YouTubeあるある - 鎖定高畫質
 Date: 2021-05-10
-Modified: 2021-05-10
+Modified: 2022-05-10 00:00
 Category: Category
-Tags: [zh_TW, Firefox, Add-ons, Extensions, YouTube, YouTube High Definition]
+Tags: [zh_TW, Firefox, Add-ons, Extensions, YouTube]
 Slug: YouTubeHighDefinition
 Authors: [undecV]
 Summary: <del>你手機可以看 4K？</del>
@@ -12,10 +12,6 @@ Summary: <del>你手機可以看 4K？</del>
 <!-- # YouTube 鎖定高畫質 -->
 
 > <del>你手機可以看 4K？</del>
-
-> Copyright © undecV.<br />
-> [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)<br />
-> This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 最近的 YouTube 出於奇怪的理由，調降了預設的影片畫質 [^1]，
 甚至修改了畫質設定 [^2]，用策略替代原本的解析度選項，
