@@ -33,4 +33,4 @@ Enhancer for YouTube™ 是一個免費、專有擴充套件（[Firefox Add-on][
 
 還有一些沒有介紹到的功能，推薦載來玩玩看。
 
-![Before_After]({static}/images/YouTube_Enhancer_for_YouTube/Before_After.png)
+![Before_After]({static}/images/YouTube_Enhancer_for_YouTube/BeforeAfter.png)
