@@ -11,12 +11,12 @@ Summary: <del>巨幅銀幕、人體工學</del>
 
 > <del>巨幅銀幕、人體工學</del>
 
-Enhancer for YouTube™ 是一個免費、專有擴充套件（[Firefox Add-on][AMO], [Chrome Extension][ChromeWebstore]），它為 YouTube 播放器添加了超多實用的功能，
+Enhancer for YouTube™ 是一個免費、專有擴充套件（[Firefox Add-on][Enhancer for YouTube Firefox], [Chrome Extension][Enhancer for YouTube Chrome]），它為 YouTube 播放器添加了超多實用的功能，
 功能超多到以至於很難介紹，也很難介紹完，
 是 YouTube 增強系的擴充套件的集大成之作，就像瑞士刀。
 
-[AMO]: https://addons.mozilla.org/firefox/addon/enhancer-for-youtube/
-[ChromeWebstore]: https://chrome.google.com/webstore/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle
+[Enhancer for YouTube Firefox]: https://addons.mozilla.org/firefox/addon/enhancer-for-youtube/
+[Enhancer for YouTube Chrome]: https://chrome.google.com/webstore/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle
 
 - 聲音拉到最大都聽不清，就可以開啟**音量增強**的功能；
 - 畫面看不清楚，可以用**影片濾鏡**調整亮度、對比、飽和度...
