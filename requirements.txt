@@ -1,3 +1,5 @@
+#!python -m pip install -r
+
 Markdown
 pelican
 PyYAML

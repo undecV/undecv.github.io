@@ -29,7 +29,7 @@ Firefox 內建的畫中畫（Picture-in-picture）功能就可以讓影片逃出
 
 跳出式視窗沒有辦法用滑鼠拖到螢幕邊緣進行 Snap 視窗分割，可以搭配 ***PowerToys***（[官方網站][PowerToys]）的 FancyZones 功能，甚至可以預設好視窗的大小，做到沒有黑邊的 DD。
 
-![]({static}/images/YouTube_Popup_Video/YouTube_Popup_Video.png)
+![大型DD現場]({static}/images/YouTube_Popup_Video/YouTube_Popup_Video.png)
 
 [YouTube Popout Player Firefox]: https://addons.mozilla.org/firefox/addon/youtube-popout-player/
 [YouTube Popout Player Chrome]: https://chrome.google.com/webstore/detail/youtube-popout-player/kmfikkopdhmbdbkndkamabamlkkgkpod
