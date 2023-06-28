@@ -124,76 +124,14 @@ KeePass 也可以拿來存儲一些像是金鑰之類的資訊，
 &lt;p&gt;Yahoo: &lt;a href="https://tw.help.yahoo.com/kb/sln3012.html"&gt;建立高安全性密碼的秘訣&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Cyber Security"></category></entry><entry><title>CLaunch 中文化</title><link href="https://undecv.github.io/posts/CLaunchZHTW.html" rel="alternate"></link><published>2023-06-22T00:00:00+08:00</published><updated>2023-06-22T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2023-06-22:/posts/CLaunchZHTW.html</id><summary type="html">&lt;p&gt;我把 CLaunch 中文化了。&lt;/p&gt;</summary><content type="html">&lt;!-- # CLaunch 中文化 --&gt;
-
-&lt;!-- &gt; 我把 CLaunch 中文化了。 --&gt;
-
-&lt;p&gt;前往：&lt;a href="https://hp.vector.co.jp/authors/VA018351/en/claunch.html"&gt;CLaunch 官方網站&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;當我升級到 Windows 11 後，我的期待本是拿麼大，
-但更新帶來的諸多變化如半成品一般。
-最主要的痛點在於開始選單，
-無法收納的圖標還有莫名其妙的建議欄位 &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
-&lt;p&gt;而 Windows 10 的開始選單，承襲 Windows 8 的 Metro 設計，
-雖然有 Metro 看板一般的好看，卻沒有其一般的可靠，
-甚至每次打開開始選單的時候，同一個圖標都會在不一樣的位置，
-亦少有軟體支援它的圖標樣式。&lt;/p&gt;
-&lt;p&gt;我曾經習慣於使用的啟動器，隨著時間的流逝，早就停止更新。
-我開始尋求替代的選項。
-現在的啟動器選擇越來越多，功能也越來越多。
-每個人對啟動器的使用習慣都大不相同，種類也十人十色。
-這便是那些對工具和生產力如痴如醉的工程師大顯身手的地方。&lt;/p&gt;
-&lt;p&gt;啟動器（Launcher）的目的在於優雅且快速的存取想要的功能、軟體、檔案。
-我大致將啟動器分成搜尋類和圖標類，
-搜尋類可以通過打字快速找到想要的功能或者檔案，
-讓桌面環境的使用融合進控制檯指令一般的便利。
-圖標類就像超市的貨架，
-讓“我能做什麼”和“我該怎麼做”的構思一覽無遺。
-對我的而言兩個功能都不可或缺。
-但作為強迫症和潔癖的晚期患者，
-甚至連搜尋結果都希望由自己控制。&lt;/p&gt;
-&lt;p&gt;我喜歡 Rainmeter，喜歡花費大把大把的時間在 DeviantArt 尋找各種面板，
-就是要讓喜歡的東西變成自己的形狀。
-在那個網路尚未變質的純樸年代，
-像是 伺か 在桌布上放一個可以與你對話的角色，
-又像是 Winamp &lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt; 的軟體突破了視窗的局限，
-替換各種花俏的外觀，在各種功能豐富的面板間排列組合。
-曾幾何時，軟體開發已經被網頁化的 Electron 佔去了……
-當代的設計喜歡簡潔乾淨的平面化，
-對外觀的客製化甚至有黑暗模式都是奢望。
-已經少有軟體支援能打中宅宅的少女心的完整客製化外觀支援。&lt;/p&gt;
-&lt;p&gt;CLaunch 是圖標類的啟動器。
-上個世紀的軟體，竟然開發至今，完全相容最新的作業系統。
-秉承者日系軟體的小巧精緻，功能卻非常豐富。
-生產效率類的工具都需要習慣，而豐富的功能往往讓人難以入手，
-但它確是可以開箱即用的超低門檻、超高上限。
-在網路上也能找到很多愛好者創作的外觀，可以變成喜歡的樣子。
-它的功能和使用方式網路上有很多，我也不多贅述。&lt;/p&gt;
-&lt;p&gt;我迫不及待的和那些被 M$ 半吊子更新困擾的朋友們分享，
-但卻沒有正體中文的支援。
-懷著對 CLaunch 的敬意和熱情，我決定製作一個中文模組。&lt;/p&gt;
-&lt;p&gt;這是我第一次將軟體中文化，
-好在 CLaunch 對多語言的完整支援，翻譯快速且順利的完成了。
-也希望更多人可以用到這些從未老去的軟體。&lt;/p&gt;
-&lt;div class="footnote"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;新版的 Windows 11 22H2 更新已經改進開始選單，
-  添加圖標收納和可調整已釘選（Pinned）和建議欄位（Recommended）的比例，
-  但其客製化程度仍有限。&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:2"&gt;
-&lt;p&gt;但 Winamp 也改版了...&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Dogfooding"></category><category term="Launcher"></category><category term="Software"></category><category term="Translation"></category></entry><entry><title>推薦的 Windows 應用軟體列表</title><link href="https://undecv.github.io/posts/WinSoft.html" rel="alternate"></link><published>2023-06-18T00:00:00+08:00</published><updated>2023-06-18T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2023-06-18:/posts/WinSoft.html</id><summary type="html">&lt;p&gt;List of Windows Application Software&lt;br /&gt;&lt;del&gt;裝機必備的實用軟體大合集！&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;推薦一些 Windows 平台下的軟體， 適合日常以及非日常使用。&lt;br /&gt;
+&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Cyber Security"></category></entry><entry><title>推薦的 Windows 應用軟體列表</title><link href="https://undecv.github.io/posts/WinSoft.html" rel="alternate"></link><published>2023-06-29T00:00:00+08:00</published><updated>2023-06-29T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2023-06-29:/posts/WinSoft.html</id><summary type="html">&lt;p&gt;List of Windows Application Software&lt;br /&gt;&lt;del&gt;裝機必備的實用軟體大合集！&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;推薦一些 Windows 平台下的軟體， 適合日常以及非日常使用。&lt;br /&gt;
 並不一定每一款軟體你都需要或適合你，也未必是大眾的選擇；&lt;br /&gt;
 &lt;del&gt;但是那些無時無刻不在彈廣告的辣雞軟件一定不會是你的選擇。&lt;/del&gt;&lt;/p&gt;
 &lt;!-- # List of Windows Application Software --&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;&lt;del&gt;裝機必備的實用軟體大合集！&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;Version 5.3.0 (2023-06-18): 更新和修正了一拖拉庫內容。&lt;/p&gt;
+&lt;p&gt;Version 5.3.1 (2023-06-29): 更新和修正了部分內容。&lt;/p&gt;
 &lt;p&gt;Copyright © 2023 undecV.&lt;br /&gt;
 &lt;a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;&lt;img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;&lt;br /&gt;
 This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;&lt;/p&gt;
@@ -327,7 +265,9 @@ This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;a href="https://www.voidtools.com/"&gt;&lt;strong&gt;Everything&lt;/strong&gt;&lt;/a&gt;: 超高速文件搜尋。(&lt;a href="https://www.appinn.com/tag/everything/"&gt;小众软件&lt;/a&gt;)&lt;/li&gt;
 &lt;ul&gt;&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;a href="https://github.com/stnkl/EverythingToolbar"&gt;&lt;strong&gt;EverythingToolbar&lt;/strong&gt;&lt;/a&gt;: 把 Everything 放到工作列上。&lt;/li&gt;
-&lt;/ul&gt;&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;a href="http://www.launchy.net/"&gt;&lt;strong&gt;Launchy&lt;/strong&gt;&lt;/a&gt;: 快速啓動工具，再也不需要尋找快捷方式。(&lt;a href="https://www.appinn.com/launchy/"&gt;小众软件&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;a href="http://www.launchy.net/"&gt;&lt;strong&gt;Launchy&lt;/strong&gt;&lt;/a&gt;: 搜尋式啟動器，停止更新多年。(&lt;a href="https://www.appinn.com/launchy/"&gt;小众软件&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自由&lt;/code&gt; &lt;a href="https://ueli.app"&gt;&lt;strong&gt;ueli&lt;/strong&gt;&lt;/a&gt;: 搜尋式啟動器。&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://hp.vector.co.jp/authors/VA018351/en/claunch.html"&gt;&lt;strong&gt;CLaunch&lt;/strong&gt;&lt;/a&gt;: 圖標式啟動器。(&lt;a href="https://undecv.github.io/posts/CLaunchZHTW.html#CLaunchZHTW"&gt;本站&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3&gt;Security - 安全&lt;/h3&gt;
@@ -421,7 +361,7 @@ This work is licensed under a &lt;a href="http://creativecommons.org/licenses/by
 
 &lt;!--
 Flags filter: ['Abandon', 'Pro', 'Old', 'Discontinued']
-Count: {filter: 34, folders: 29, elements: 106}
+Count: {filter: 34, folders: 29, elements: 108}
 --&gt;
 
 &lt;h2&gt;如何尋找實用優秀軟體&lt;/h2&gt;
@@ -455,6 +395,7 @@ Count: {filter: 34, folders: 29, elements: 106}
 &lt;hr&gt;
 &lt;h2&gt;Release Notes&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;5.3.1 (2023-06-29): 更新和修正了部分內容。&lt;/li&gt;
 &lt;li&gt;5.3.0 (2023-06-18): 更新和修正了一拖拉庫內容。&lt;/li&gt;
 &lt;li&gt;5.1.0 (2021-01-06): 第五版更新。更新和修正了部分內容；程式碼演進，模板更新；軟體資訊由 YAML 格式儲存和整理，再由 Python 和 Jinja2 渲染而成。&lt;/li&gt;
 &lt;li&gt;5.0.0 (2020-12-13): 第五版更新。更新和修正了部分內容；程式碼重寫，文章生成基於 Python、jinja2 和 YAML。&lt;/li&gt;
@@ -473,7 +414,69 @@ Count: {filter: 34, folders: 29, elements: 106}
 &lt;li&gt;1.2.1 (2017-11-30)&lt;/li&gt;
 &lt;li&gt;1.2.0 (2017-08-21)&lt;/li&gt;
 &lt;li&gt;1.1.0 (2017-07-26)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Awesome lists"></category><category term="Windows"></category><category term="Softwares"></category><category term="Apps"></category></entry><entry><title>YouTubeあるある - 瀏覽器多視窗</title><link href="https://undecv.github.io/posts/YouTubePopupVideo.html" rel="alternate"></link><published>2022-05-11T00:00:00+08:00</published><updated>2022-05-11T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2022-05-11:/posts/YouTubePopupVideo.html</id><summary type="html">&lt;p&gt;&lt;del&gt;DD必知必會101&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
+&lt;/ul&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Awesome lists"></category><category term="Windows"></category><category term="Softwares"></category><category term="Apps"></category></entry><entry><title>CLaunch 中文化</title><link href="https://undecv.github.io/posts/CLaunchZHTW.html" rel="alternate"></link><published>2023-06-22T00:00:00+08:00</published><updated>2023-06-22T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2023-06-22:/posts/CLaunchZHTW.html</id><summary type="html">&lt;p&gt;我把 CLaunch 中文化了。&lt;/p&gt;</summary><content type="html">&lt;!-- # CLaunch 中文化 --&gt;
+
+&lt;!-- &gt; 我把 CLaunch 中文化了。 --&gt;
+
+&lt;p&gt;前往：&lt;a href="https://hp.vector.co.jp/authors/VA018351/en/claunch.html"&gt;CLaunch 官方網站&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;當我升級到 Windows 11 後，我的期待本是拿麼大，
+但更新帶來的諸多變化如半成品一般。
+最主要的痛點在於開始選單，
+無法收納的圖標還有莫名其妙的建議欄位 &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;p&gt;而 Windows 10 的開始選單，承襲 Windows 8 的 Metro 設計，
+雖然有 Metro 看板一般的好看，卻沒有其一般的可靠，
+甚至每次打開開始選單的時候，同一個圖標都會在不一樣的位置，
+亦少有軟體支援它的圖標樣式。&lt;/p&gt;
+&lt;p&gt;我曾經習慣於使用的啟動器，隨著時間的流逝，早就停止更新。
+我開始尋求替代的選項。
+現在的啟動器選擇越來越多，功能也越來越多。
+每個人對啟動器的使用習慣都大不相同，種類也十人十色。
+這便是那些對工具和生產力如痴如醉的工程師大顯身手的地方。&lt;/p&gt;
+&lt;p&gt;啟動器（Launcher）的目的在於優雅且快速的存取想要的功能、軟體、檔案。
+我大致將啟動器分成搜尋類和圖標類，
+搜尋類可以通過打字快速找到想要的功能或者檔案，
+讓桌面環境的使用融合進控制檯指令一般的便利。
+圖標類就像超市的貨架，
+讓“我能做什麼”和“我該怎麼做”的構思一覽無遺。
+對我的而言兩個功能都不可或缺。
+但作為強迫症和潔癖的晚期患者，
+甚至連搜尋結果都希望由自己控制。&lt;/p&gt;
+&lt;p&gt;我喜歡 Rainmeter，喜歡花費大把大把的時間在 DeviantArt 尋找各種面板，
+就是要讓喜歡的東西變成自己的形狀。
+在那個網路尚未變質的純樸年代，
+像是 伺か 在桌布上放一個可以與你對話的角色，
+又像是 Winamp &lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt; 的軟體突破了視窗的局限，
+替換各種花俏的外觀，在各種功能豐富的面板間排列組合。
+曾幾何時，軟體開發已經被網頁化的 Electron 佔去了……
+當代的設計喜歡簡潔乾淨的平面化，
+對外觀的客製化甚至有黑暗模式都是奢望。
+已經少有軟體支援能打中宅宅的少女心的完整客製化外觀支援。&lt;/p&gt;
+&lt;p&gt;CLaunch 是圖標類的啟動器。
+上個世紀的軟體，竟然開發至今，完全相容最新的作業系統。
+秉承者日系軟體的小巧精緻，功能卻非常豐富。
+生產效率類的工具都需要習慣，而豐富的功能往往讓人難以入手，
+但它確是可以開箱即用的超低門檻、超高上限。
+在網路上也能找到很多愛好者創作的外觀，可以變成喜歡的樣子。
+它的功能和使用方式網路上有很多，我也不多贅述。&lt;/p&gt;
+&lt;p&gt;我迫不及待的和那些被 M$ 半吊子更新困擾的朋友們分享，
+但卻沒有正體中文的支援。
+懷著對 CLaunch 的敬意和熱情，我決定製作一個中文模組。&lt;/p&gt;
+&lt;p&gt;這是我第一次將軟體中文化，
+好在 CLaunch 對多語言的完整支援，翻譯快速且順利的完成了。
+也希望更多人可以用到這些從未老去的軟體。&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;新版的 Windows 11 22H2 更新已經改進開始選單，
+  添加圖標收納和可調整已釘選（Pinned）和建議欄位（Recommended）的比例，
+  但其客製化程度仍有限。&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;但 Winamp 也改版了...&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Dogfooding"></category><category term="Launcher"></category><category term="Software"></category><category term="Translation"></category></entry><entry><title>YouTubeあるある - 瀏覽器多視窗</title><link href="https://undecv.github.io/posts/YouTubePopupVideo.html" rel="alternate"></link><published>2022-05-11T00:00:00+08:00</published><updated>2022-05-11T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2022-05-11:/posts/YouTubePopupVideo.html</id><summary type="html">&lt;p&gt;&lt;del&gt;DD必知必會101&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
 &lt;p&gt;&lt;del&gt;DD必知必會101&lt;/del&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;瀏覽器多視窗是現代瀏覽器的基本技能，只要把標籤頁拖動到隨意位置就可以很容易的創立新視窗，平鋪這些視窗就可以在一個螢幕上同時看多個頁面，這功能讓工作和摸魚都變得高效。瀏覽器完整的視窗有功能豐富的工具列，但是對於一個只播放影片的視窗來說這些工具列就顯得多餘，希望有辦法可以有專門視窗可以關閉工具列，只顯示內容。&lt;/p&gt;
@@ -482,7 +485,7 @@ Count: {filter: 34, folders: 29, elements: 106}
 &lt;p&gt;極少數時候，一些創作者會設定影片禁止使用嵌入式播放器，這個方法就失效了。&lt;/p&gt;
 &lt;p&gt;免費、開源的擴充套件 &lt;strong&gt;&lt;em&gt;Popup window&lt;/em&gt;&lt;/strong&gt;（&lt;a href="https://addons.mozilla.org/firefox/addon/popup-window/"&gt;Firefox Add-on&lt;/a&gt;, &lt;a href="https://chrome.google.com/webstore/detail/popup-window/nnlippelgfbglbhiccffmnmlnhmbjjpe"&gt;Chrome Extension&lt;/a&gt;）可以讓任何的網頁放入跳出式視窗，與繁體簡體中文轉換工具 新同文堂 師出同門。Twitch 自帶的跳出式視窗會有一個地址欄，但如果使用 Popup window 搭配劇院模式就又可以實現乾淨的視窗。&lt;/p&gt;
 &lt;p&gt;同個家族的免費、開源的擴充套件 &lt;strong&gt;&lt;em&gt;Popup Video&lt;/em&gt;&lt;/strong&gt;（&lt;a href="https://addons.mozilla.org/firefox/addon/popup-video-webextension/"&gt;Firefox Add-on&lt;/a&gt;）與上面介紹的 YouTube Popout Player 功能相近，但啟用的按鈕沒有融入介面設計，在導覽頁和播放器右上角會有出現一個白色的按鈕。&lt;/p&gt;
-&lt;p&gt;免費、專有的擴充套件 &lt;strong&gt;&lt;em&gt;Enhancer for YouTube™&lt;/em&gt;&lt;/strong&gt;（&lt;a href="https://addons.mozilla.org/firefox/addon/enhancer-for-youtube/"&gt;Firefox Add-on&lt;/a&gt;, &lt;a href="https://chrome.google.com/webstore/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle"&gt;Chrome Extension&lt;/a&gt;） 功能豐富，也帶有跳出式視窗的功能，可以看看專文介紹：&lt;a href="{filename}/posts/YouTube_Enhancer_for_YouTube.md"&gt;YouTubeあるある - 戲院級的觀影體驗！擴充套件 Enhancer for YouTube™&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;免費、專有的擴充套件 &lt;strong&gt;&lt;em&gt;Enhancer for YouTube™&lt;/em&gt;&lt;/strong&gt;（&lt;a href="https://addons.mozilla.org/firefox/addon/enhancer-for-youtube/"&gt;Firefox Add-on&lt;/a&gt;, &lt;a href="https://chrome.google.com/webstore/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle"&gt;Chrome Extension&lt;/a&gt;） 功能豐富，也帶有跳出式視窗的功能，可以看看專文介紹：&lt;a href="https://undecv.github.io/posts/YouTubeEnhancerForYouTube.html"&gt;YouTubeあるある - 戲院級的觀影體驗！擴充套件 Enhancer for YouTube™&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;免費、專有的擴充套件 &lt;strong&gt;&lt;em&gt;Video Popup Tool&lt;/em&gt;&lt;/strong&gt;（&lt;a href="https://addons.mozilla.org/firefox/addon/popup-tool/"&gt;Firefox Add-on&lt;/a&gt;）可以讓其他網站的 HTML5 播放器也能利用跳出式視窗，例如學習教學平臺上的線上課程。&lt;/p&gt;
 &lt;p&gt;跳出式視窗沒有辦法用滑鼠拖到螢幕邊緣進行 Snap 視窗分割，可以搭配 &lt;strong&gt;&lt;em&gt;PowerToys&lt;/em&gt;&lt;/strong&gt;（&lt;a href="https://docs.microsoft.com/zh-tw/windows/powertoys/install"&gt;官方網站&lt;/a&gt;）的 FancyZones 功能，甚至可以預設好視窗的大小，做到沒有黑邊的 DD。&lt;/p&gt;
 &lt;p&gt;&lt;img alt="大型DD現場" src="https://undecv.github.io/images/YouTube_Popup_Video/YouTube_Popup_Video.png"&gt;&lt;/p&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Firefox"></category><category term="Chrome"></category><category term="Add-ons"></category><category term="Extensions"></category><category term="YouTube"></category></entry><entry><title>YouTubeあるある - 我不想再看短影片</title><link href="https://undecv.github.io/posts/YouTubeNoShorts.html" rel="alternate"></link><published>2022-05-10T00:30:00+08:00</published><updated>2022-05-10T00:30:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2022-05-10:/posts/YouTubeNoShorts.html</id><summary type="html">&lt;p&gt;&lt;del&gt;抖〇一響，父母白養&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;!-- # No More YouTube Shorts --&gt;
