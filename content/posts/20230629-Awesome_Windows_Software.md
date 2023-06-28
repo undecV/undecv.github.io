@@ -1,7 +1,7 @@
 ---
 Title: 推薦的 Windows 應用軟體列表
-Date: 2023-06-18
-Modified: 2023-06-18
+Date: 2023-06-29
+Modified: 2023-06-29
 Category: Category
 Tags: [zh_TW, Awesome lists, Windows, Softwares, Apps]
 Slug: WinSoft
@@ -17,7 +17,7 @@ Summary: List of Windows Application Software<br /><del>裝機必備的實用軟
 
 > <del>裝機必備的實用軟體大合集！</del>
 
-> Version 5.3.0 (2023-06-18): 更新和修正了一拖拉庫內容。
+> Version 5.3.1 (2023-06-29): 更新和修正了部分內容。
 
 > Copyright © 2023 undecV.<br />
 > [![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)<br />
@@ -163,7 +163,9 @@ Summary: List of Windows Application Software<br /><del>裝機必備的實用軟
 <ul>
 <li><code>自由</code> <a href="https://www.voidtools.com/"><strong>Everything</strong></a>: 超高速文件搜尋。(<a href="https://www.appinn.com/tag/everything/">小众软件</a>)</li>
 <ul><li><code>自由</code> <a href="https://github.com/stnkl/EverythingToolbar"><strong>EverythingToolbar</strong></a>: 把 Everything 放到工作列上。</li>
-</ul><li><code>自由</code> <a href="http://www.launchy.net/"><strong>Launchy</strong></a>: 快速啓動工具，再也不需要尋找快捷方式。(<a href="https://www.appinn.com/launchy/">小众软件</a>)</li>
+</ul><li><code>自由</code> <a href="http://www.launchy.net/"><strong>Launchy</strong></a>: 搜尋式啟動器，停止更新多年。(<a href="https://www.appinn.com/launchy/">小众软件</a>)</li>
+<li><code>自由</code> <a href="https://ueli.app"><strong>ueli</strong></a>: 搜尋式啟動器。</li>
+<li><a href="https://hp.vector.co.jp/authors/VA018351/en/claunch.html"><strong>CLaunch</strong></a>: 圖標式啟動器。(<a href="https://undecv.github.io/posts/CLaunchZHTW.html#CLaunchZHTW">本站</a>)</li>
 </ul>
 
 <h3>Security - 安全</h3>
@@ -257,7 +259,7 @@ Summary: List of Windows Application Software<br /><del>裝機必備的實用軟
 
 <!--
 Flags filter: ['Abandon', 'Pro', 'Old', 'Discontinued']
-Count: {filter: 34, folders: 29, elements: 106}
+Count: {filter: 34, folders: 29, elements: 108}
 -->
 
 ## 如何尋找實用優秀軟體
@@ -289,6 +291,7 @@ Count: {filter: 34, folders: 29, elements: 106}
 
 ## Release Notes
 
+- 5.3.1 (2023-06-29): 更新和修正了部分內容。
 - 5.3.0 (2023-06-18): 更新和修正了一拖拉庫內容。
 - 5.1.0 (2021-01-06): 第五版更新。更新和修正了部分內容；程式碼演進，模板更新；軟體資訊由 YAML 格式儲存和整理，再由 Python 和 Jinja2 渲染而成。
 - 5.0.0 (2020-12-13): 第五版更新。更新和修正了部分內容；程式碼重寫，文章生成基於 Python、jinja2 和 YAML。
