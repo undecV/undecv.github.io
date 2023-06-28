@@ -143,14 +143,14 @@ This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa
 <h2>代理</h2>
 <p>代理（Proxy）是一種網絡服務，允許兩個通訊方之間進行非直接的連線。</p>
 <p>例如：A 與 B 之間需要進行通訊，但是無法（或者不想）建立直接的連線；A 與 P、B 與 P 之間能進行正常的通訊，那麼，藉由 P，可在 A 與 B 之間建立通訊的通道。在這當中 P 就是 代理伺服器（Proxy Server）。</p>
-<div class="highlight"><pre><span></span><code><span class="o">+----------+</span>      <span class="o">|</span>防<span class="o">|</span>                       <span class="o">+----------+</span>
-<span class="o">|</span>          <span class="o">|</span> <span class="o">&lt;---</span> <span class="o">|</span>火<span class="o">|</span> <span class="o">-----</span> 無法鏈接 <span class="o">-----&gt;</span> <span class="o">|</span>          <span class="o">|</span>
-<span class="o">|</span> 你的電腦 <span class="o">|</span>      <span class="o">|</span>牆<span class="o">|</span>      <span class="o">+----------+</span>     <span class="o">|</span> 目標網站 <span class="o">|</span>
-<span class="o">|</span>          <span class="o">|</span> <span class="o">&lt;------------&gt;</span> <span class="o">|</span>          <span class="o">|</span> <span class="o">&lt;-&gt;</span> <span class="o">|</span>          <span class="o">|</span>
-<span class="o">+----------+</span>   沒有被牆的   <span class="o">|</span> 遠程電腦 <span class="o">|</span>     <span class="o">+----------+</span>
-  <span class="o">/</span>______\                  <span class="o">|</span>          <span class="o">|</span>       <span class="o">/</span>______\
-                            <span class="o">+----------+</span>
-                              <span class="o">/</span>______\
+<div class="highlight"><pre><span></span><code><span class="o">+----------+</span><span class="w">      </span><span class="o">|</span>防<span class="o">|</span><span class="w">                       </span><span class="o">+----------+</span>
+<span class="o">|</span><span class="w">          </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;---</span><span class="w"> </span><span class="o">|</span>火<span class="o">|</span><span class="w"> </span><span class="o">-----</span><span class="w"> </span>無法鏈接<span class="w"> </span><span class="o">-----&gt;</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span>你的電腦<span class="w"> </span><span class="o">|</span><span class="w">      </span><span class="o">|</span>牆<span class="o">|</span><span class="w">      </span><span class="o">+----------+</span><span class="w">     </span><span class="o">|</span><span class="w"> </span>目標網站<span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">          </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;------------&gt;</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;-&gt;</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="o">|</span>
+<span class="o">+----------+</span><span class="w">   </span>沒有被牆的<span class="w">   </span><span class="o">|</span><span class="w"> </span>遠程電腦<span class="w"> </span><span class="o">|</span><span class="w">     </span><span class="o">+----------+</span>
+<span class="w">  </span><span class="o">/</span>______\<span class="w">                  </span><span class="o">|</span><span class="w">          </span><span class="o">|</span><span class="w">       </span><span class="o">/</span>______\
+<span class="w">                            </span><span class="o">+----------+</span>
+<span class="w">                              </span><span class="o">/</span>______\
 </code></pre></div>
 
 <p>代理伺服器可以是閘道器、路由器，也可是一臺電腦或者虛擬機，也可是你電腦中的軟體；代理伺服器亦可不止一個。</p>
@@ -191,7 +191,7 @@ This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa
 </code></pre></div>
 
 <p>例如：</p>
-<div class="highlight"><pre><span></span><code><span class="nt">http</span><span class="o">=</span><span class="nt">127</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">1</span><span class="p">:</span><span class="nd">9487</span><span class="o">;</span><span class="nt">https</span><span class="o">=</span><span class="nt">127</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">1</span><span class="p">:</span><span class="nd">9487</span><span class="o">;</span><span class="nt">socks</span><span class="o">=</span><span class="nt">127</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">1</span><span class="p">:</span><span class="nd">9487</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">http</span><span class="o">=</span><span class="nt">127</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">1</span><span class="p">:</span><span class="nd">9487</span><span class="o">;</span><span class="nt">https</span><span class="o">=</span><span class="nt">127</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">1</span><span class="p">:</span><span class="nd">9487</span><span class="o">;</span><span class="nt">socks</span><span class="o">=</span><span class="nt">127</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">0</span><span class="p">.</span><span class="nc">1</span><span class="p">:</span><span class="nd">9487</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>socks=127.0.0.1:9487
@@ -254,7 +254,7 @@ This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa
 </article>
 
     <footer>
-<p>&copy; 2022 キャンディージャー</p>
+<p>&copy; 2023 キャンディージャー</p>
 <p>
 Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
   <span class="footer-separator">|</span>

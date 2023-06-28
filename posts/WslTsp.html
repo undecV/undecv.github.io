@@ -169,7 +169,7 @@
 </ol>
 <h2>7-Zip 指令與批次檔</h2>
 <p>Windows 版本的 7-Zip 原生支援指令行模式，<a href="https://sevenzip.osdn.jp/chm/cmdline/index.htm">User's Guide</a> 說明了詳細的用法。例如下面的指令將 <code>D:\src</code> 以 7z 的格式壓縮到 <code>D:\dst.7z</code>：</p>
-<div class="highlight"><pre><span></span><code><span class="mf">7</span><span class="n">z</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">-</span><span class="n">t7z</span><span class="w"> </span><span class="s">&quot;D:\dst.7z&quot;</span><span class="w"> </span><span class="s">&quot;D:\src&quot;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="mf">7</span><span class="n">z</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">-</span><span class="n">t7z</span><span class="w"> </span><span class="s">&quot;D:\dst.7z&quot;</span><span class="w"> </span><span class="s">&quot;D:\src&quot;</span>
 </code></pre></div>
 
 <p>一個小小的訣竅可以節省壓縮檔案的步驟，創立一個 Batch 批次檔手稿程式，新增一個 txt 文字檔，並將副檔名改成 <code>.bat</code> 即可，例如 <code>zipit.bat</code>，編輯內容並存檔：</p>
@@ -189,7 +189,7 @@ WSL 可以讓 Windows 執行 Linux 的程式，並且可以串接 Windows 的指
 <li>開始選單會出現安裝後的 Ubuntu，初次使用會需要設定 UNIX 使用者名稱和密碼。這些都不會影響到原本的作業系統，忘記密碼也可以透過特殊手段重設。當你看到 <code>使用者名稱@電腦名:~$</code> 的時候，到此你的 WSL 的設定就完成了。</li>
 </ol>
 <p>進行 WSL 的更新，執行需要輸入剛剛設定的 UNIX 密碼：</p>
-<div class="highlight"><pre><span></span><code>sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get upgrade
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>upgrade
 </code></pre></div>
 
 <h2>Task Spooler</h2>
@@ -197,23 +197,23 @@ WSL 可以讓 Windows 執行 Linux 的程式，並且可以串接 Windows 的指
 <p>TL;DR：Task Spooler 的絕妙的設計，是 伺服器＼客戶端，使用者使用 tsp 指令創立任務時，會創立一個客戶端，到後臺等待伺服器的通知後執行，完成後回報給伺服器，伺服器再通知下一個客戶端的指令執行，伺服器負責發號施令而不會執行指令。</p>
 </blockquote>
 <p>在 WSL 中下載安裝 Task Spooler：</p>
-<div class="highlight"><pre><span></span><code>sudo apt-get install task-spooler
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>task-spooler
 </code></pre></div>
 
 <p>Task Spooler 的指令是 <code>tsp</code>，列出一些基本用法：</p>
-<div class="highlight"><pre><span></span><code>tsp -V          <span class="c1"># 檢查版本</span>
-tsp -h          <span class="c1"># 印出說明</span>
-tsp sleep <span class="m">5</span>     <span class="c1"># 新增指令 `sleep 5` 到任務佇列，返回的數字是任務的 ID</span>
-tsp             <span class="c1"># 印出任務列表</span>
-tsp -c <span class="nv">$id</span>      <span class="c1"># 小寫 c，檢查指定任務的輸出，</span>
-                <span class="c1">#     替換 $id 為什麼任務 ID，不指定的話會印出最後一個</span>
-tsp -S <span class="nv">$num</span>     <span class="c1"># 大寫 S，指定同時執行任務的數量，</span>
-                <span class="c1">#     替換 $num 為數量，不指定的話會印出當前的設定</span>
-tsp -C          <span class="c1"># 大寫 C，清除已經完成的任務</span>
+<div class="highlight"><pre><span></span><code>tsp<span class="w"> </span>-V<span class="w">          </span><span class="c1"># 檢查版本</span>
+tsp<span class="w"> </span>-h<span class="w">          </span><span class="c1"># 印出說明</span>
+tsp<span class="w"> </span>sleep<span class="w"> </span><span class="m">5</span><span class="w">     </span><span class="c1"># 新增指令 `sleep 5` 到任務佇列，返回的數字是任務的 ID</span>
+tsp<span class="w">             </span><span class="c1"># 印出任務列表</span>
+tsp<span class="w"> </span>-c<span class="w"> </span><span class="nv">$id</span><span class="w">      </span><span class="c1"># 小寫 c，檢查指定任務的輸出，</span>
+<span class="w">                </span><span class="c1">#     替換 $id 為什麼任務 ID，不指定的話會印出最後一個</span>
+tsp<span class="w"> </span>-S<span class="w"> </span><span class="nv">$num</span><span class="w">     </span><span class="c1"># 大寫 S，指定同時執行任務的數量，</span>
+<span class="w">                </span><span class="c1">#     替換 $num 為數量，不指定的話會印出當前的設定</span>
+tsp<span class="w"> </span>-C<span class="w">          </span><span class="c1"># 大寫 C，清除已經完成的任務</span>
 </code></pre></div>
 
 <p>我們也可以專門開一個終端機，使用 <code>watch</code> 指令來實時監視 Task Spooler 的任務列表：</p>
-<div class="highlight"><pre><span></span><code>watch -n <span class="m">0</span>.1 tsp
+<div class="highlight"><pre><span></span><code>watch<span class="w"> </span>-n<span class="w"> </span><span class="m">0</span>.1<span class="w"> </span>tsp
 </code></pre></div>
 
 <h2>WSL 串接指令</h2>
@@ -223,7 +223,7 @@ tsp -C          <span class="c1"># 大寫 C，清除已經完成的任務</span>
 </code></pre></div>
 
 <p>在 WSL 中也可以呼叫 Windows 端的工具軟體，參數會原樣傳遞：</p>
-<div class="highlight"><pre><span></span><code>7z.exe a -t7z <span class="s2">&quot;D:\dst.7z&quot;</span> <span class="s2">&quot;D:\src&quot;</span>  <span class="c1"># 執行 Windows 端的 7-Zip</span>
+<div class="highlight"><pre><span></span><code>7z.exe<span class="w"> </span>a<span class="w"> </span>-t7z<span class="w"> </span><span class="s2">&quot;D:\dst.7z&quot;</span><span class="w"> </span><span class="s2">&quot;D:\src&quot;</span><span class="w">  </span><span class="c1"># 執行 Windows 端的 7-Zip</span>
 </code></pre></div>
 
 <p>注意，若 WSL 安裝過移植版的「p7zip」，指令 <code>7z</code> 會是指「p7zip」而不是 Windows 版的「7z.exe」。</p>
@@ -264,7 +264,7 @@ tsp -C          <span class="c1"># 大寫 C，清除已經完成的任務</span>
 </article>
 
     <footer>
-<p>&copy; 2022 キャンディージャー</p>
+<p>&copy; 2023 キャンディージャー</p>
 <p>
 Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
   <span class="footer-separator">|</span>

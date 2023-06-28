@@ -151,38 +151,38 @@
 可以自動把短影片的地址轉換到一般的播放器。</p>
 <p>把下面這段資料存成文字檔，在 REDIRECTOR 擴充套件中導入（Import），啟用之後便會自動把短影片轉址到一般的播放器。</p>
 <p>最後，好孩子不要去找範例網址XD</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Redirector v3.5.3&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;createdAt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-05-09T15:03:30.599Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;redirects&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">        </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;No More YouTube Shorts&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;exampleUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.youtube.com/shorts/z4Wl0asydDA&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;exampleResult&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.youtube.com/watch?v=z4Wl0asydDA&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;includePattern&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.youtube.com/shorts/*&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;excludePattern&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;patternDesc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;redirectUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.youtube.com/watch?v=$1&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;patternType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;W&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;processMatches&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;noProcessing&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;disabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;grouped&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;appliesTo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;main_frame&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;sub_frame&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;stylesheet&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;script&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;image&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;imageset&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;object&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;xmlhttprequest&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;history&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;other&quot;</span><span class="w"></span>
-<span class="w">            </span><span class="p">]</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">]</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Redirector v3.5.3&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;createdAt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-05-09T15:03:30.599Z&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;redirects&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;No More YouTube Shorts&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;exampleUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.youtube.com/shorts/z4Wl0asydDA&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;exampleResult&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.youtube.com/watch?v=z4Wl0asydDA&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;includePattern&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.youtube.com/shorts/*&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;excludePattern&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;patternDesc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;redirectUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.youtube.com/watch?v=$1&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;patternType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;W&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;processMatches&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;noProcessing&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;disabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;grouped&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;appliesTo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="s2">&quot;main_frame&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;sub_frame&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;stylesheet&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;script&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;image&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;imageset&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;xmlhttprequest&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;history&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;other&quot;</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
 </code></pre></div>
   </div>
   <div class="tag-cloud">
@@ -203,7 +203,7 @@
 </article>
 
     <footer>
-<p>&copy; 2022 キャンディージャー</p>
+<p>&copy; 2023 キャンディージャー</p>
 <p>
 Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
   <span class="footer-separator">|</span>
