@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>キャンディージャー - Category</title><link href="https://undecv.github.io/" rel="alternate"></link><link href="https://undecv.github.io/feeds/category.atom.xml" rel="self"></link><id>https://undecv.github.io/</id><updated>2023-06-29T00:00:00+08:00</updated><subtitle>undecV's Blog "Candy Jar"</subtitle><entry><title>你也可以知道的賽博安全指南 - 帳密篇</title><link href="https://undecv.github.io/posts/CyberSecurityAccount.html" rel="alternate"></link><published>2023-06-29T00:00:00+08:00</published><updated>2023-06-29T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2023-06-29:/posts/CyberSecurityAccount.html</id><summary type="html">&lt;p&gt;&lt;del&gt;偵測到您的賬戶有異常登錄記錄，請儘速處理。&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;!-- # 你也可以知道的賽博安全指南 - 帳密篇 --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>キャンディージャー - Category</title><link href="https://undecv.github.io/" rel="alternate"></link><link href="https://undecv.github.io/feeds/category.atom.xml" rel="self"></link><id>https://undecv.github.io/</id><updated>2023-07-16T00:00:00+08:00</updated><subtitle>undecV's Blog "Candy Jar"</subtitle><entry><title>BtrVol 音量控制軟體</title><link href="https://undecv.github.io/posts/BtrVol.html" rel="alternate"></link><published>2023-07-16T00:00:00+08:00</published><updated>2023-07-16T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2023-07-16:/posts/BtrVol.html</id><summary type="html">&lt;p&gt;&lt;del&gt;夢裡看片今日實現。&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;del&gt;夢裡看片今日實現。&lt;/del&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;BtrVol 專案 &lt;a href="https://github.com/undecV/BtrVol"&gt;首頁&lt;/a&gt;、&lt;a href="https://github.com/undecV/BtrVol/blob/main/readme.zh.md"&gt;中文說明&lt;/a&gt;、&lt;a href="https://github.com/undecV/BtrVol/releases"&gt;下載&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;網路確是讓人成癮的毒藥。&lt;/p&gt;
+&lt;p&gt;在這個連上廁所都手機不離手的時代，
+大家都無時不刻在吸食這些賽博鴉片，
+新聞、社群、影片、遊戲，
+人們已經忘卻了如何放空，
+甚至是睡前那片刻的寧靜…&lt;/p&gt;
+&lt;p&gt;是以，
+為了在入睡之際也能沉迷 YouTube，
+我寫了 BtrVol，一個聲音控制軟體，
+能夠隨著時間提升、降低音量。
+音量控制是通過精心設計的弦波函數達成的，
+相較於直線的調整更加輕柔、順滑。&lt;/p&gt;
+&lt;p&gt;臨睡之際，
+點開不用動腦的 Minecraft 影片，
+讓音量先緩後急的慢慢下降，
+讓思緒漸漸從影片中抽離，
+也讓入睡後再無打擾。&lt;/p&gt;
+&lt;p&gt;醒來之後，
+生怕 YouTube 自動播放到了世界的哪個陰暗的角落，
+原來是訂閱的 VTuber 的直播記錄檔，
+果然還是懂自己的演算法最對味。&lt;/p&gt;</content><category term="Category"></category><category term="zh_TW"></category><category term="Dogfooding"></category><category term="Software"></category><category term="Volume Control"></category></entry><entry><title>你也可以知道的賽博安全指南 - 帳密篇</title><link href="https://undecv.github.io/posts/CyberSecurityAccount.html" rel="alternate"></link><published>2023-06-29T00:00:00+08:00</published><updated>2023-06-29T00:00:00+08:00</updated><author><name>undecV</name></author><id>tag:undecv.github.io,2023-06-29:/posts/CyberSecurityAccount.html</id><summary type="html">&lt;p&gt;&lt;del&gt;偵測到您的賬戶有異常登錄記錄，請儘速處理。&lt;/del&gt;&lt;/p&gt;</summary><content type="html">&lt;!-- # 你也可以知道的賽博安全指南 - 帳密篇 --&gt;
 
 &lt;p&gt;&lt;del&gt;偵測到您的賬戶有異常登錄記錄，請儘速處理。&lt;/del&gt;&lt;/p&gt;
 &lt;h2&gt;哪個王八蛋駭客啊&lt;/h2&gt;
