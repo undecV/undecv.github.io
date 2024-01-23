@@ -3,7 +3,7 @@ Title: BitTorrent 從入門到出門
 Date: 2019-12-11
 Modified: 2019-12-11
 Category: Category
-Tags: [zh_TW, BitTorrent, Download, File Sharing, Tutorial, Introduction]
+Tags: [zh_TW, BitTorrent, Download, File Sharing, Tutorial, Computer Concepts]
 Slug: BitTorrentIntro
 Authors: [undecV]
 Summary: BitTorrent Introduction

@@ -3,7 +3,7 @@ Title: 如何在不同環境下設定 Proxy 代理伺服器
 Date: 2018-05-20
 Modified: 2018-07-09
 Category: Category
-Tags: [zh_TW, Proxy, Tutorial]
+Tags: [zh_TW, Proxy, Tutorial, Computer Concepts]
 Slug: ProxySettings
 Authors: [undecV]
 Summary: Proxy Settings

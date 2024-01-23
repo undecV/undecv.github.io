@@ -3,7 +3,7 @@ Title: 數位影像檔案格式
 Date: 2018-02-07
 Modified: 2018-02-07
 Category: Category
-Tags: [zh_TW, Graphics, File Formats, Introduction]
+Tags: [zh_TW, Graphics, File Formats, Computer Concepts]
 Slug: GraphicsFileFormats
 Authors: [undecV]
 Summary: Comparison of Graphics File Formats<br />在使用電腦的過程中，常見很多圖像檔案格式，例如：BMP、JPG、GIF、PNG；<br />大角蜀的你是否在使用電腦繪圖或影像處理的時候不知該使用以上何種格式而困擾？
