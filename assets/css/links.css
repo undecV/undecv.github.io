@@ -538,20 +538,37 @@
   }
   .lk-block-meta a {
     color: inherit;
+    text-decoration-line: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 150ms ease;
+  }
+  .lk-block-meta a:hover {
+    text-decoration-color: currentColor;
+  }
+  .lk-block-meta a:focus-visible {
+    border-radius: 0.15em;
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+    text-decoration-color: currentColor;
+  }
+  .lk-block-meta a:active {
+    text-decoration-thickness: 0.12em;
   }
   details.lk-section {
     display: block;
     padding: 0;
   }
   details.lk-section > summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
+    display: block;
     padding-block: 0.8rem;
-    padding-inline: 1rem;
+    padding-inline: 1rem 2.5rem;
     color: var(--lk-text);
     font-size: 1.2rem;
     font-weight: 600;
+    text-align: start;
     list-style: none;
     cursor: pointer;
     -webkit-user-select: none;
@@ -559,12 +576,15 @@
             user-select: none;
   }
   details.lk-section > summary::after {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-end: 1rem;
     inline-size: 0.5rem;
     block-size: 0.5rem;
     border-inline-end: 2px solid currentColor;
     border-block-end: 2px solid currentColor;
     content: "";
-    transform: rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
     transition: transform 200ms ease;
   }
   details.lk-section > summary:focus-visible {
@@ -572,7 +592,7 @@
     outline-offset: 3px;
   }
   details.lk-section[open] > summary::after {
-    transform: rotate(225deg);
+    transform: translateY(-50%) rotate(225deg);
   }
   details.lk-section::details-content {
     display: flex;
@@ -605,6 +625,28 @@
   .is-rainbow *::selection {
     color: var(--lk-base);
     background-color: var(--lk-text);
+  }
+  .is-spoiler {
+    padding-inline: 0.25em;
+    border-radius: 0.2em;
+    color: transparent;
+    background-color: var(--lk-overlay0);
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    transition: color 150ms ease, background-color 150ms ease;
+  }
+  .is-spoiler:is(:hover, :focus) {
+    color: var(--lk-text);
+    background-color: var(--lk-surface2);
+    -webkit-user-select: text;
+       -moz-user-select: text;
+            user-select: text;
+  }
+  .is-spoiler:focus-visible {
+    outline: 2px solid var(--lk-mauve);
+    outline-offset: 2px;
   }
   .has-background {
     --lk-surface-opacity: var(--lk-background-opacity, 100%);
@@ -789,10 +831,21 @@
     box-shadow: none;
     backdrop-filter: none;
   }
+  .has-no-padding {
+    padding: 0;
+  }
   @media (forced-colors: active) {
     .is-rainbow {
       color: CanvasText;
       background-image: none;
+    }
+    .is-spoiler {
+      color: Canvas;
+      background-color: CanvasText;
+    }
+    .is-spoiler:is(:hover, :focus) {
+      color: CanvasText;
+      background-color: Canvas;
     }
   }
   @media (prefers-reduced-motion: reduce) {

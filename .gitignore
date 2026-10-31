@@ -2,3 +2,6 @@
 *.css.map
 *.sass.map
 *.scss.map
+
+# Local source image; the optimized WebP is deployed.
+assets/images/gravatar.256.png

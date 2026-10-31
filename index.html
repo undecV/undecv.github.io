@@ -49,23 +49,51 @@
   <body data-material="acrylic" data-wallpaper-effect="material">
     <picture class="lk-wallpaper-source">
       <source
-        media="(prefers-color-scheme: dark)"
+        media="(prefers-color-scheme: dark) and (min-width: 2560px)"
         srcset="./assets/images/ian-valerio-CAFq0pv9HjY-unsplash.jpg"
+      />
+      <source
+        media="(prefers-color-scheme: dark)"
+        type="image/avif"
+        srcset="
+          ./assets/images/ian-valerio-CAFq0pv9HjY-unsplash.1280.avif 1280w,
+          ./assets/images/ian-valerio-CAFq0pv9HjY-unsplash.1920.avif 1920w
+        "
+        sizes="100vw"
+      />
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="./assets/images/ian-valerio-CAFq0pv9HjY-unsplash.1280.avif"
+      />
+      <source
+        media="(min-width: 2560px)"
+        srcset="./assets/images/jason-briscoe-pAqfQye5hlw-unsplash.jpg"
+      />
+      <source
+        type="image/avif"
+        srcset="
+          ./assets/images/jason-briscoe-pAqfQye5hlw-unsplash.1280.avif 1280w,
+          ./assets/images/jason-briscoe-pAqfQye5hlw-unsplash.1920.avif 1920w
+        "
+        sizes="100vw"
       />
       <img
         class="lk-wallpaper"
-        src="./assets/images/jason-briscoe-pAqfQye5hlw-unsplash.jpg"
+        src="./assets/images/jason-briscoe-pAqfQye5hlw-unsplash.1280.avif"
+        width="1920"
+        height="1280"
         alt=""
         aria-hidden="true"
+        fetchpriority="high"
       />
     </picture>
 
     <main class="lk-container">
-      <section class="lk-section" aria-labelledby="profile-name">
+      <section class="lk-section has-no-background" aria-labelledby="profile-name">
         <header class="lk-block-header has-no-background">
           <div class="lk-block-icon">
             <img
-              src="https://gravatar.com/avatar/5615c32282d64c2bdd03899c18f710e4ac87f4a2867710f3e93b9345de244c9d?s=256"
+              src="./assets/images/gravatar.192.webp"
               width="96"
               height="96"
               alt=""
@@ -73,13 +101,13 @@
             />
           </div>
           <div class="lk-block-content">
-            <h1 id="profile-name">undecV</h1>
+            <h1 class="is-rainbow" id="profile-name">undecV</h1>
             <p>Hello there!</p>
           </div>
         </header>
       </section>
 
-      <nav class="lk-section" aria-label="Primary links">
+      <nav class="lk-section has-no-background" aria-label="Primary links">
         <a
           class="lk-block-link"
           href="https://github.com/undecV"
@@ -111,7 +139,7 @@
         </a>
       </nav>
 
-      <details class="lk-section" open>
+      <details class="lk-section has-no-background" open>
         <summary>Social Media</summary>
 
         <a
@@ -158,21 +186,18 @@
         </a>
       </details>
 
-      <section class="lk-section">
+      <section class="lk-section has-no-background">
         <footer class="lk-block-footer">
           <p>
             <small>
-              Webpage design by
-              <a href="https://github.com/undecv/links">undecV</a>.
+              Built with
+              <a href="https://github.com/undecV/Links">undecV/Links</a>.
             </small>
           </p>
           <p>
             <small>
               Background photos by
-              <a
-                href="https://unsplash.com/photos/aerial-view-photography-of-road-between-highrise-building-CAFq0pv9HjY"
-                >Ian Valerio</a
-              >
+              <a href="https://unsplash.com/photos/CAFq0pv9HjY">Ian Valerio</a>
               and
               <a href="https://unsplash.com/photos/pAqfQye5hlw"
                 >Jason Briscoe</a

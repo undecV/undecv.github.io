@@ -598,27 +598,30 @@
     padding: 0;
 
     > summary {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      position: relative;
+      display: block;
       padding-block: 0.8rem;
-      padding-inline: 1rem;
+      padding-inline: 1rem 2.5rem;
 
       color: var(--lk-text);
       font-size: 1.2rem;
       font-weight: 600;
+      text-align: start;
       list-style: none;
       cursor: pointer;
       user-select: none;
 
       &::after {
+        position: absolute;
+        inset-block-start: 50%;
+        inset-inline-end: 1rem;
         inline-size: 0.5rem;
         block-size: 0.5rem;
         border-inline-end: 2px solid currentColor;
         border-block-end: 2px solid currentColor;
 
         content: "";
-        transform: rotate(45deg);
+        transform: translateY(-50%) rotate(45deg);
         transition: transform 200ms ease;
       }
 
@@ -629,7 +632,7 @@
     }
 
     &[open] > summary::after {
-      transform: rotate(225deg);
+      transform: translateY(-50%) rotate(225deg);
     }
 
     &::details-content {
@@ -662,6 +665,31 @@
     *::selection {
       color: var(--lk-base);
       background-color: var(--lk-text);
+    }
+  }
+
+  // A visual spoiler: hover it or focus it from the keyboard to reveal it.
+  .is-spoiler {
+    padding-inline: 0.25em;
+    border-radius: 0.2em;
+
+    color: transparent;
+    background-color: var(--lk-overlay0);
+    cursor: pointer;
+    user-select: none;
+    transition:
+      color 150ms ease,
+      background-color 150ms ease;
+
+    &:is(:hover, :focus) {
+      color: var(--lk-text);
+      background-color: var(--lk-surface2);
+      user-select: text;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--lk-mauve);
+      outline-offset: 2px;
     }
   }
 
@@ -716,6 +744,16 @@
     .is-rainbow {
       color: CanvasText;
       background-image: none;
+    }
+
+    .is-spoiler {
+      color: Canvas;
+      background-color: CanvasText;
+
+      &:is(:hover, :focus) {
+        color: CanvasText;
+        background-color: Canvas;
+      }
     }
   }
 
